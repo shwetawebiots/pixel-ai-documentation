@@ -455,34 +455,34 @@
 // Global Scroll-to-Search Feature
 // ===============================
 
+// Module-level helpers so both IIFEs can access them
+function escapeRegexGlobal(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function highlightAndScroll(query) {
+  const safeQuery = query.trim();
+  if (!safeQuery) return;
+
+  const regex = new RegExp(`\\b(${escapeRegexGlobal(safeQuery)})\\b`, "gi");
+
+  document.querySelectorAll("p, li, td, span, div, h1, h2, h3, h4, h5, h6").forEach(el => {
+    if (el.children.length === 0 && el.textContent.match(regex)) {
+      el.innerHTML = el.innerHTML.replace(regex, `<mark class="search-highlight">$1</mark>`);
+    }
+  });
+
+  const first = document.querySelector(".search-highlight");
+  if (first) {
+    first.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
+
 (function () {
-  // Run after page load
   document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     const query = params.get("q");
     if (!query) return;
-
-    // Highlight and scroll
     highlightAndScroll(query);
   });
-
-  function highlightAndScroll(query) {
-    const safeQuery = query.trim();
-    if (!safeQuery) return;
-
-    const regex = new RegExp(`\\b(${escapeRegex(safeQuery)})\\b`, "gi");
-
-    // Replace matches globally (works for all page content)
-    document.querySelectorAll("p, li, td, span, div, h1, h2, h3, h4, h5, h6").forEach(el => {
-      if (el.children.length === 0 && el.textContent.match(regex)) {
-        el.innerHTML = el.innerHTML.replace(regex, `<mark class="search-highlight">$1</mark>`);
-      }
-    });
-
-    // Scroll smoothly to first highlight
-    const first = document.querySelector(".search-highlight");
-    if (first) {
-      first.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  }
 })();

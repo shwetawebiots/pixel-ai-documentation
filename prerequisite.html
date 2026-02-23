@@ -159,65 +159,137 @@
             </div>
           </div>
         </div>
-        <div class="content">
+        <div class="content card-hover-effect">
           <div class="row">
             <div class="col-sm-12">
-              <button class="btn sidebar-button">Menu</button>
-              <h4 class="main-title mb-4">Prerequisites for Pixel AI</h4>
+              <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Prerequisites for Pixel AI</h4>
             </div>
+            
             <div class="col-12">
               <div class="card">
-                <div class="card-body ul-body">
-                  <h3 class="main-sub-title mt-0">System Requirements</h3>
-                  <p>Before installing Pixel AI, ensure your server or local environment meets the following baseline requirements:</p>
-                  <ul>
-                    <li><b>Node.js:</b> Version 18.x or higher (LTS recommended).</li>
-                    <li><b>MongoDB:</b> Version 6.0 or higher.</li>
-                    <li><b>Redis:</b> Required for task queuing (BullMQ) and performance caching.</li>
-                    <li><b>NPM / Yarn:</b> Version 8+ or 1.22+.</li>
-                  </ul>
+                <div class="card-body">
+                  <!-- System Requirements Section -->
+                  <div class="mb-5">
+                    <h3 class="main-sub-title mt-0 mb-4">Baseline System Requirements</h3>
+                    <p class="mb-4 text-muted">Ensure your environment meets these standards before starting the installation.</p>
+                    <div class="row gy-4">
+                      <div class="col-md-6 col-lg-3">
+                        <div class="d-flex align-items-start">
+                          <img src="assets/images/icon/3.png" alt="" style="width: 32px; height: 32px;" class="me-3">
+                          <div>
+                            <h6 class="mb-1">Node.js</h6>
+                            <p class="small mb-0">v18.x or higher (LTS)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <div class="d-flex align-items-start">
+                          <img src="assets/images/icon/4.png" alt="" style="width: 32px; height: 32px;" class="me-3">
+                          <div>
+                            <h6 class="mb-1">MongoDB</h6>
+                            <p class="small mb-0">v6.0+ for Database</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <div class="d-flex align-items-start">
+                          <img src="assets/images/icon/2.png" alt="" style="width: 32px; height: 32px;" class="me-3">
+                          <div>
+                            <h6 class="mb-1">Redis</h6>
+                            <p class="small mb-0">Required for BullMQ</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <div class="d-flex align-items-start">
+                          <img src="assets/images/icon/5.png" alt="" style="width: 32px; height: 32px;" class="me-3">
+                          <div>
+                            <h6 class="mb-1">Package Manager</h6>
+                            <p class="small mb-0">NPM 8+ / Yarn 1.22+</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-                  <h3 class="main-sub-title">Mandatory API Keys</h3>
-                  <p>To enable AI features, you must obtain API keys from the following providers:</p>
-                  <table class="table table-bordered custom-table">
-                    <thead>
-                      <tr>
-                        <th>Provider</th>
-                        <th>Feature</th>
-                        <th>Link</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Google Cloud</td>
-                        <td>Gemini Pro AI (Text/Vision)</td>
-                        <td><a href="https://aistudio.google.com/app/apikey" target="_blank">Get Key</a></td>
-                      </tr>
-                      <tr>
-                        <td>GROQ Cloud</td>
-                        <td>High-speed Llama3/Mixtral</td>
-                        <td><a href="https://console.groq.com/keys" target="_blank">Get Key</a></td>
-                      </tr>
-                      <tr>
-                        <td>OpenAI</td>
-                        <td>GPT-4 / DALL-E (Optional)</td>
-                        <td><a href="https://platform.openai.com/api-keys" target="_blank">Get Key</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <!-- Mandatory API Keys Section -->
+                  <div class="mb-5">
+                    <h3 class="main-sub-title mb-4">Mandatory API Keys</h3>
+                    <div class="table-responsive">
+                      <table class="table table-borderless align-middle custom-table">
+                        <thead class="bg-light">
+                          <tr>
+                            <th>Platform</th>
+                            <th>Description</th>
+                            <th class="text-end">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="border-bottom">
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <img src="assets/images/icon/12.png" alt="" style="width: 20px;" class="me-2">
+                                <b>Gemini Pro AI</b>
+                              </div>
+                            </td>
+                            <td class="small text-muted">Primary engine for text & vision processing via Google AI Studio.</td>
+                            <td class="text-end"><a href="https://aistudio.google.com/app/apikey" target="_blank" class="btn btn-xs btn-primary">Get Key</a></td>
+                          </tr>
+                          <tr class="border-bottom">
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <img src="assets/images/icon/14.png" alt="" style="width: 20px;" class="me-2">
+                                <b>GROQ Cloud</b>
+                              </div>
+                            </td>
+                            <td class="small text-muted">Ultra-fast inference for Llama 3 and Mixtral models.</td>
+                            <td class="text-end"><a href="https://console.groq.com/keys" target="_blank" class="btn btn-xs btn-primary">Get Key</a></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <img src="assets/images/icon/16.png" alt="" style="width: 20px;" class="me-2">
+                                <b>OpenAI (Opt)</b>
+                              </div>
+                            </td>
+                            <td class="small text-muted">Optional support for GPT-4 and DALL-E image generation.</td>
+                            <td class="text-end"><a href="https://platform.openai.com/api-keys" target="_blank" class="btn btn-xs btn-light">Get Key</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
 
-                  <h3 class="main-sub-title">Third-Party Integrations</h3>
-                  <p>For payments and social media features, the following are required:</p>
-                  <ul>
-                    <li><b>Stripe / Razorpay / Paypal:</b> Developer accounts for subscription management.</li>
-                    <li><b>Facebook Developer:</b> App with Instagram Graph API permissions for social automation.</li>
-                    <li><b>SMTP Server:</b> Gmail (with App Password) or Mailtrap for system emails.</li>
-                  </ul>
+                  <!-- Third-Party Section -->
+                  <div>
+                    <h3 class="main-sub-title mb-4">Integrations & Communication</h3>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="p-3 bg-light rounded shadow-sm mb-3 h-100">
+                          <h6 class="mb-3"><i class="fa fa-credit-card me-2 text-primary"></i>Payment Gateways</h6>
+                          <ul class="list-unstyled mb-0 small">
+                            <li class="mb-2"><b>Stripe / Razorpay:</b> For subscription management.</li>
+                            <li><b>PayPal:</b> Global payment processing support.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3 bg-light rounded shadow-sm mb-3 h-100">
+                          <h6 class="mb-3"><i class="fa fa-envelope me-2 text-primary"></i>Social & Email</h6>
+                          <ul class="list-unstyled mb-0 small">
+                            <li class="mb-2"><b>Instagram Graph:</b> Facebook Developer App credentials.</li>
+                            <li><b>SMTP Server:</b> Gmail App Password or Mailtrap for alerts.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 mt-4">
               <div class="card">
                 <div class="card-body">
                   <div class="steps-box">
@@ -274,11 +346,13 @@
     <footer>
       <div class="container"><div class="row footer-theme partition-f"><div class="col-12">Copyright 2026 © Pixel AI</div></div></div>
     </footer>
+    <div class="bg-overlay"></div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="assets/js/document/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/global-search.js"></script>
   </body>
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/icons/feather-icon/feather.min.js"></script>
-  <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
-  <script src="assets/js/document/main.js"></script>
-  <script src="assets/js/script.js"></script>
 </html>

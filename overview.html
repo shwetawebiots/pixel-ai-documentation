@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css" />
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css" />
     <!-- App css-->
@@ -147,72 +151,132 @@
               </aside>
             </div>
           </div>
-        </div>
-        <div class="content">
+        </div>                        
+        <div class="content card-hover-effect">
           <div class="row">
             <div class="col-sm-12">
-              <button class="btn sidebar-button">Menu</button>
-              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Pixel AI Installation</h4>
+              <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Pixel AI Installation Overview</h4>
             </div>
+            
             <div class="col-12">
               <div class="card">
-                <div class="card-body ul-body">
-                  <h3 class="main-sub-title mt-0">Architecture Overview</h3>
-                  <div class="row gy-4">
-                    <div class="col-md-6">
-                      <div class="project-option">
-                        <h5>1. Project Structure:</h5>
-                        <p>Pixel AI is divided into two primary repositories: <b>pixel-ai</b> (Backend API) and <b>pixel-ai-next</b> (Frontend). Both must be configured correctly for the platform to function.</p>
+                <div class="card-body">
+                  <!-- Architecture Blueprint -->
+                  <div class="mb-5">
+                    <h3 class="main-sub-title mt-0 mb-4">Architecture Blueprint</h3>
+                    <p class="mb-4 text-muted">Pixel AI is structured into two core repositories that work in tandem to provide a complete AI ecosystem.</p>
+                    
+                    <div class="row gy-4">
+                      <div class="col-lg-6">
+                        <div class="p-4 rounded border-start border-4 border-primary bg-light h-100">
+                          <div class="d-flex align-items-center mb-3">
+                            <img src="assets/images/icon/2.png" alt="" style="width: 32px; height: 32px;" class="me-3">
+                            <h6 class="mb-0 fw-bold">Standalone API (pixel-ai)</h6>
+                          </div>
+                          <p class="small text-muted">The core engine built with Node.js and Express. It manages the database, AI model interactions, and background workers.</p>
+                          <ul class="list-unstyled small mb-0 mt-3">
+                            <li class="mb-2"><i class="fa fa-caret-right text-primary me-2"></i> MongoDB for data persistence</li>
+                            <li><i class="fa fa-caret-right text-primary me-2"></i> Redis & BullMQ for task processing</li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="project-option">
-                        <h5>2. Installation Order:</h5>
-                        <p>We recommend setting up the <b>Backend</b> first to ensure the database and Redis services are active, followed by the <b>Frontend</b> configuration.</p>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="code-block">
-                        <p>Pixel AI Bundle Composition:</p>
-                        <ul>
-                          <li>1. pixel-ai (Node.js/Express Backend)</li>
-                          <li>2. pixel-ai-next (Next.js 16 Frontend)</li>
-                          <li>3. pixel-ai-documentation (Static HTML Docs)</li>
-                        </ul>
+                      <div class="col-lg-6">
+                        <div class="p-4 rounded border-start border-4 border-info bg-light h-100">
+                          <div class="d-flex align-items-center mb-3">
+                            <img src="assets/images/icon/5.png" alt="" style="width: 32px; height: 32px;" class="me-3">
+                            <h6 class="mb-0 fw-bold">Modern Web UI (pixel-ai-next)</h6>
+                          </div>
+                          <p class="small text-muted">The high-performance user interface built with Next.js 16. It communicates with the Backend API to deliver AI services.</p>
+                          <ul class="list-unstyled small mb-0 mt-3">
+                            <li class="mb-2"><i class="fa fa-caret-right text-info me-2"></i> Server-Side Rendering (SSR)</li>
+                            <li><i class="fa fa-caret-right text-info me-2"></i> Tailwind CSS & Radix UI components</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <hr />
-                  <p>Follow the subsequent guides for detailed environment-specific installation steps.</p>
+
+                  <!-- Bundle Manifest -->
+                  <div class="mb-4">
+                    <h3 class="main-sub-title mb-4">Pixel AI Bundle Composition</h3>
+                    <div class="alert alert-light border-0 shadow-sm p-4">
+                      <p class="mb-3 text-muted">Your purchase includes the following pre-configured components:</p>
+                      <div class="table-responsive">
+                        <table class="table table-borderless align-middle custom-table mb-0">
+                          <tbody>
+                            <tr class="border-bottom">
+                              <td style="width: 40px;"><img src="assets/images/icon/13.png" alt="" style="width: 24px;"></td>
+                              <td><b>pixel-ai</b></td>
+                              <td class="small text-muted">Core Backend API Source Code</td>
+                            </tr>
+                            <tr class="border-bottom">
+                              <td><img src="assets/images/icon/19.png" alt="" style="width: 24px;"></td>
+                              <td><b>pixel-ai-next</b></td>
+                              <td class="small text-muted">Frontend Dashboard Source Code</td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/images/icon/3.png" alt="" style="width: 24px;"></td>
+                              <td><b>pixel-ai-docs</b></td>
+                              <td class="small text-muted">Offline Documentation Files</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex align-items-center p-3 bg-primary-light rounded border-start border-4 border-primary mt-4">
+                    <i class="fa fa-info-circle text-primary me-3 fs-5"></i>
+                    <p class="small mb-0"><b>Installation Priority:</b> We highly recommend setting up the <b>Backend API</b> first to ensure your database and AI services are operational before configuring the Frontend.</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 mt-4">
               <div class="card">
                 <div class="card-body">
                   <div class="steps-box">
                     <div class="steps-title">
-                      <div><i class="fa fa-rocket"></i><h2>What's Next?</h2></div>
-                      <p>Let's configure the frontend!</p>
+                      <div>
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                        <h2>What's Next?</h2>
+                      </div>
+                      <p>Pick your next step to continue the setup</p>
                     </div>
                     <div class="row gy-4">
                       <div class="col-md-4 col-sm-6">
-                        <a href="frontend-installation.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/5.png" alt="" /></div>
-                          <div class="steps-items"><h3>Frontend Setup</h3><p>Next.js environment</p></div>
+                        <a href="backend-local-server.html" class="steps-content">
+                          <div class="icon">
+                            <img src="assets/images/icon/2.png" alt="" />
+                          </div>
+                          <div class="steps-items">
+                            <h3>Backend Setup</h3>
+                            <p>Node.js & Database</p>
+                          </div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
-                        <a href="backend-local-server.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
-                          <div class="steps-items"><h3>Backend Setup</h3><p>Local API configuration</p></div>
+                        <a href="frontend-installation.html" class="steps-content">
+                          <div class="icon">
+                            <img src="assets/images/icon/5.png" alt="" />
+                          </div>
+                          <div class="steps-items">
+                            <h3>Frontend Setup</h3>
+                            <p>Next.js environment</p>
+                          </div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
                         <a href="deployment-vercel.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/7.png" alt="" /></div>
-                          <div class="steps-items"><h3>Deployment</h3><p>Vercel & Live hosting</p></div>
+                          <div class="icon">
+                            <img src="assets/images/icon/7.png" alt="" />
+                          </div>
+                          <div class="steps-items">
+                            <h3>Deployment</h3>
+                            <p>Local & Live Hosting</p>
+                          </div>
                         </a>
                       </div>
                     </div>
@@ -225,5 +289,14 @@
       </div>
     </div>
     <footer><div class="container"><div class="row footer-theme partition-f"><div class="col-12">Copyright 2026 © Pixel AI</div></div></div></footer>
+    <div class="bg-overlay"></div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="assets/js/document/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/global-search.js"></script>
   </body>
 </html>
+

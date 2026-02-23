@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css" />
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css" />
     <!-- App css-->
@@ -141,87 +145,109 @@
         <div class="content card-hover-effect">
           <div class="row">
             <div class="col-sm-12">
-              <button class="btn sidebar-button">Menu</button>
-              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Pixel-AI-Next Setup</h4>
+              <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Frontend UI Setup (Next.js)</h4>
             </div>
+            
             <div class="col-12">
-              <p class="mb-3">The Pixel AI frontend is built with <b>Next.js 16</b> and <b>React 19</b>. It provides a highly responsive UI for AI chat, content generation, and social media management.</p>
+              <p class="mb-4 text-muted">The Pixel AI Dashboard is a high-performance frontend interface. Built with <b>Next.js 16</b> and <b>React 19</b>, it leverages <b>Tailwind CSS 4</b> for styling and <b>Redux Toolkit</b> for robust state management.</p>
             </div>
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body ul-body">
-                  <div class="installation-steps-container">
-                    <h3>Step 1: Folder Preparation</h3>
-                    <p>Navigate to the <b>pixel-ai-next</b> directory in your terminal.</p>
-                    <div class="code-block">
-                      <ul>
-                        <li>cd pixel-ai-next</li>
-                        <li>npm install</li>
-                      </ul>
-                    </div>
-                    <p>This will install all necessary dependencies, including Radix UI, Redux Toolkit, and Tailwind CSS 4.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <div class="installation-steps-container" style="margin-top: 20px">
-                    <h3>Step 2: Environment Variables</h3>
-                    <p>Create a <b>.env.local</b> file in the frontend root directory.</p>
-                    <div class="code-block">
-                      <ul>
-                        <li>NEXT_PUBLIC_API_BASE_URL=http://localhost:3000/api</li>
-                        <li>NEXT_PUBLIC_SOCKET_URL=http://localhost:3000</li>
-                        <li>NEXT_PUBLIC_APP_URL=http://localhost:3001</li>
-                      </ul>
+                  <!-- Installation Step -->
+                  <div class="mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 36px; height: 36px; font-weight: 700;">01</div>
+                      <h3 class="main-sub-title mb-0 mt-0">Install Project Dependencies</h3>
                     </div>
-                    <div class="note-container noted-box">
-                      <h5>Configuration Details:</h5>
-                      <ul>
-                        <li><b>NEXT_PUBLIC_API_BASE_URL:</b> Points to your backend API server.</li>
-                        <li><b>NEXT_PUBLIC_SOCKET_URL:</b> Used for real-time AI status updates.</li>
-                      </ul>
+                    <p class="text-muted small mb-3">Open your terminal in the <code>pixel-ai-next</code> directory and run the following command to link all required modules.</p>
+                    <div class="code-block p-4 bg-light rounded border shadow-sm">
+                      <pre class="mb-0"><code><span class="text-info"># Navigate to frontend</span>
+cd pixel-ai-next
+
+<span class="text-info"># Install packages</span>
+npm install</code></pre>
+                    </div>
+                  </div>
+
+                  <!-- Configuration Step -->
+                  <div class="mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 36px; height: 36px; font-weight: 700;">02</div>
+                      <h3 class="main-sub-title mb-0 mt-0">Environment Configuration</h3>
+                    </div>
+                    <p class="text-muted small mb-3">The application uses <code>next.config.ts</code> for default environment settings. To customize these for your local setup, create a <code>.env.local</code> file in the root directory.</p>
+                    
+                    <div class="table-responsive mb-4 shadow-sm rounded">
+                      <table class="table table-borderless align-middle custom-table mb-0 border">
+                        <thead class="bg-light">
+                          <tr>
+                            <th class="ps-4">Environment Variable</th>
+                            <th>Description</th>
+                            <th class="pe-4">Default (next.config.ts)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="border-bottom">
+                            <td class="ps-4"><code class="text-primary fw-bold">NEXT_PUBLIC_API_BASE_URL</code></td>
+                            <td class="small text-muted">The core API endpoint for data and AI processing.</td>
+                            <td class="pe-4"><code class="small">http://localhost:3000/api</code></td>
+                          </tr>
+                          <tr>
+                            <td class="ps-4"><code class="text-primary fw-bold">NEXT_STORAGE_URL</code></td>
+                            <td class="small text-muted">The base URL used to serve generated images and user uploads.</td>
+                            <td class="pe-4"><code class="small">http://localhost:3000</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                    <div class="alert alert-light border-start border-4 border-info bg-light-blue p-3">
+                      <p class="small mb-0"><i class="fa fa-lightbulb-o text-info me-2"></i> <b>Pro Tip:</b> Ensure the <code>NEXT_PUBLIC_API_BASE_URL</code> points to the <code>/api</code> suffix of your running Backend server.</p>
+                    </div>
+                  </div>
+
+                  <!-- Execution Step -->
+                  <div>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 36px; height: 36px; font-weight: 700;">03</div>
+                      <h3 class="main-sub-title mb-0 mt-0">Start Development Server</h3>
+                    </div>
+                    <p class="text-muted small mb-3">Launch the Next.js development environment. This project fully supports <b>Turbopack</b> for near-instant compilation.</p>
+                    <div class="code-block p-4 bg-light rounded border shadow-sm mb-4">
+                      <pre class="mb-0"><code>npm run dev</code></pre>
+                    </div>
+                    <div class="p-3 bg-primary-light rounded border-start border-4 border-primary d-flex align-items-center">
+                      <i class="fa fa-rocket text-primary me-3 fs-4"></i>
+                      <p class="small mb-0 fw-500">The dashboard will be live at: <a href="http://localhost:3001" target="_blank" class="text-primary fw-bold text-decoration-none border-bottom border-primary">http://localhost:3001</a></p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="installation-steps-container" style="margin-top: 20px">
-                    <h3>Step 3: Running Development Mode</h3>
-                    <div class="code-block">
-                      <ul>
-                        <li>npm run dev</li>
-                      </ul>
-                    </div>
-                    <p>Access the application at <b>http://localhost:3001</b> (or the port specified in your console).</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
+
+            <!-- Standardized Footer Navigation -->
+            <div class="col-12 mt-4">
               <div class="card">
                 <div class="card-body">
                   <div class="steps-box">
                     <div class="steps-title">
                       <div><i class="fa fa-rocket"></i><h2>What's Next?</h2></div>
-                      <p>Now, let's configure the Backend!</p>
+                      <p>Continue to the backend component setup!</p>
                     </div>
                     <div class="row gy-4">
                       <div class="col-md-4 col-sm-6">
                         <a href="backend-local-server.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/6.png" alt="" /></div>
-                          <div class="steps-items"><h3>Backend Local Setup</h3><p>Node.js & MongoDB</p></div>
+                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
+                          <div class="steps-items"><h3>Backend Setup</h3><p>Node.js & Database</p></div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
                         <a href="backend-live-server.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
-                          <div class="steps-items"><h3>Backend Live Setup</h3><p>Production server config</p></div>
+                          <div class="icon"><img src="assets/images/icon/22.png" alt="" /></div>
+                          <div class="steps-items"><h3>Live API Setup</h3><p>Production server config</p></div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
@@ -240,5 +266,13 @@
       </div>
     </div>
     <footer><div class="container"><div class="row footer-theme partition-f"><div class="col-12">Copyright 2026 © Pixel AI</div></div></div></footer>
+    <div class="bg-overlay"></div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="assets/js/document/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/global-search.js"></script>
   </body>
 </html>

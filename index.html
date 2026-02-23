@@ -165,7 +165,7 @@
         <div class="content">
           <div class="row">
             <div class="col-sm-12">
-              <button class="btn sidebar-button">Menu</button>
+              <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
               <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Welcome to Pixel AI!</h4>
             </div>
             <div class="col-12">
@@ -253,6 +253,116 @@
               </div>
             </div>
 
+            <!-- ===== Analyze with AI Section ===== -->
+            <div class="col-12 mt-2">
+              <div class="card">
+                <div class="card-body">
+                  <div class="ai-analyze-section">
+                    <div class="ai-analyze-header">
+                      <div class="ai-analyze-icon-wrap">
+                        <i class="fa fa-magic" aria-hidden="true"></i>
+                      </div>
+                      <div>
+                        <h3 class="main-sub-title mb-1">Analyze This Documentation with AI</h3>
+                        <p class="text-muted mb-0">Click an AI below — it will open with the analysis prompt <strong>already submitted</strong>, ready for you to review.</p>
+                      </div>
+                    </div>
+
+                    <div class="row gy-3 mt-3">
+
+                      <!-- ChatGPT -->
+                      <div class="col-xl-3 col-md-6">
+                        <button class="ai-card-btn w-100" id="btn-chatgpt" onclick="analyzeWithAI('chatgpt')" aria-label="Analyze with ChatGPT">
+                          <div class="ai-card-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" fill="none" style="width:32px;height:32px;">
+                              <path d="M37.532 16.87a9.963 9.963 0 0 0-.856-8.184 10.078 10.078 0 0 0-10.855-4.835 9.964 9.964 0 0 0-6.516-3.441 10.079 10.079 0 0 0-10.4 4.958 9.967 9.967 0 0 0-6.663 4.834 10.08 10.08 0 0 0 1.24 11.817 9.965 9.965 0 0 0 .856 8.185 10.079 10.079 0 0 0 10.855 4.835 9.965 9.965 0 0 0 6.516 3.44 10.079 10.079 0 0 0 10.402-4.958 9.967 9.967 0 0 0 6.663-4.834 10.079 10.079 0 0 0-1.243-11.817zm-22.223 15.26a7.474 7.474 0 0 1-4.795-1.693l.239-.136 7.964-4.6a1.32 1.32 0 0 0 .666-1.149v-11.24l3.365 1.944a.12.12 0 0 1 .066.092v9.299a7.505 7.505 0 0 1-7.505 7.483zm-16.116-6.879a7.474 7.474 0 0 1-.894-5.023l.239.144 7.964 4.6a1.317 1.317 0 0 0 1.332 0l9.727-5.62v3.888a.12.12 0 0 1-.048.103l-8.051 4.649a7.504 7.504 0 0 1-10.27-2.741zm-2.09-17.205a7.474 7.474 0 0 1 3.901-3.282v9.589a1.317 1.317 0 0 0 .666 1.148l9.727 5.62-3.366 1.944a.12.12 0 0 1-.114.012L8.722 19.92a7.504 7.504 0 0 1-1.619-11.874zm27.658 6.437l-9.727-5.62 3.365-1.943a.121.121 0 0 1 .114-.012l8.048 4.648a7.498 7.498 0 0 1-1.158 13.528v-9.476a1.319 1.319 0 0 0-.642-1.125zm3.35-5.043l-.239-.144-7.965-4.6a1.317 1.317 0 0 0-1.332 0L11.148 9.96V6.073a.12.12 0 0 1 .048-.103l8.05-4.645a7.497 7.497 0 0 1 11.158 7.763zm-21.063 6.929l-3.367-1.944a.12.12 0 0 1-.065-.092v-9.299a7.497 7.497 0 0 1 12.293-5.756l-.239.136-7.965 4.6a1.32 1.32 0 0 0-.666 1.149zm1.829-3.943l4.33-2.501 4.332 2.5v4.999l-4.331 2.5-4.331-2.5z" fill="currentColor"/>
+                            </svg>
+                          </div>
+                          <div class="ai-card-info">
+                            <span class="ai-card-name">ChatGPT</span>
+                            <span class="ai-card-sub">by OpenAI</span>
+                          </div>
+                          <span class="ai-card-badge ai-badge-auto"><i class="fa fa-bolt"></i> Auto</span>
+                        </button>
+                      </div>
+
+                      <!-- Perplexity -->
+                      <div class="col-xl-3 col-md-6">
+                        <button class="ai-card-btn ai-card-perplexity w-100" id="btn-perplexity" onclick="analyzeWithAI('perplexity')" aria-label="Analyze with Perplexity">
+                          <div class="ai-card-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:30px;height:30px;">
+                              <path d="M22 3.999v2l-4 3.5V12h2v2h-2v5h-2v-5H6v5H4v-5H2v-2h2V9.5l-4-3.5V4l5 4.5V4h10v4.5zM6 14v-2h12v2zm1-4.333V7H7zm10 0V7h-3z"/>
+                            </svg>
+                          </div>
+                          <div class="ai-card-info">
+                            <span class="ai-card-name">Perplexity</span>
+                            <span class="ai-card-sub">AI Search</span>
+                          </div>
+                          <span class="ai-card-badge ai-badge-auto"><i class="fa fa-bolt"></i> Auto</span>
+                        </button>
+                      </div>
+
+                      <!-- Claude -->
+                      <div class="col-xl-3 col-md-6">
+                        <button class="ai-card-btn ai-card-claude w-100" id="btn-claude" onclick="analyzeWithAI('claude')" aria-label="Analyze with Claude">
+                          <div class="ai-card-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:30px;height:30px;">
+                              <path d="M4.709 15.955l4.72-2.647.08-.23-.08-.128H9.2l-.79-.048-2.698-.073-2.339-.096-1.847-.122-.571-.121-.669-.486.097-.62.401-.401 1.086.097 1.908.048 2.012.097 2.555.073 1.086.024h.863l.024-.05-.912-.437-1.295-.486-2.048-.815-1.811-.742-1.23-.607-.546-.583.146-.692.667-.398.637.258 1.811.717 2.024.863 1.762.717.645.307.371.137-.073-.307-.194-.983-.558-2.27-.355-1.762-.267-1.497-.072-1.086.073-.742 1.134-.24.668.571.12.863.267 1.424.338 1.762.411 1.593.24 1.13.12h.1l.024-.074-.45-.327-1.076-.912-1.414-1.2-1.158-1.086-.717-.814-.274-.717.37-.656.72-.073.453.267.899.863 1.329 1.27 1.2 1.22.937.887.282.232.024-.007-.024-.122-.17-1.15-.122-1.715V6.03l.024-1.004.097-.766.485-.62 1.077-.17.364.137.388.716.097.45.073 1.293.024 1.776.049 1.664v1.245l.024.171.05-.073.765-1.664.534-1.098.936-1.76.717-1.171.656-.936.485-.461.667-.12.607.29.267.62-.097.45-.583 1.04-.912 1.737-.766 1.616-.68 1.483-.485 1.184-.154.388.074.049.388-.145.936-.79 1.28-.523.863-.41.717-.171.307-.049.024.024.17 1.183.34 1.19.411 1.175.268.814.048.268.37.717.073.62-.875-.048-1.085-.814-1.6-1.002-1.713-.607-1.1-.17-.717-.025.024.195.632.937 1.392 1.395 1.38 1.003 1.184.534.717.12.62.316.437.49.121.607-.364.17-.45.073-.47-.097-.412-.315-.74-.632-1.052-.753-1.31-.9-1.375-.631-1.1-.413-.57-.146-.073.024.097.316.729 1.012.509 1.21.244.936.024.582-.17.62-.436.198h-.632l-.632-1.163-.632-2.077-.292-1.15-.073-.62.024-.097-.097.024-.986.985-.814.912-.705.634-.624.461-.437.194-.62-.073-.46-.485-.024-.632.17-.388.656-.607.717-.669 1.026-.985.582-.582.024-.032-.072-.059H9.98l-1.343.413-1.86.5-1.665.45-1.2.291-.78.097-.668-.17-.34-.607.049-.717.468-.364.97-.17 2.43-.559 2.48-.632.705-.194-.024-.049H9.2l-.74.097-2.188.316-2.17.292-1.52.048-.887-.097-.486-.558.073-.62.452-.449.364-.073 1.74-.073 3.045-.267 2.068-.194 1.526-.17h.267l-.024-.073-.097-.024-1.39-.558-1.811-.79-1.64-.79-.96-.607-.316-.717.024-.51.51-.437.64.049.937.437 1.884.863 1.789.79.96.46.34.194.097.024.024-.097-.049-1.102-.073-.985-.17-2.746-.17-2.173-.049-1.617.073-1.005-.049-.863.17-.656.486-.17.485.073.668.486.8.582.024 1.714.097 2.21.049 1.35.024h.17l.024-.049-.34-.194-1.174-.632-2.02-1.112-1.762-1.014-.912-.656-.073-.62.267-.485.632-.073.583.267 2.09 1.282 2.068 1.22 1.02.686.13.073h.049v-.024l-.315-1.714-.267-1.543-.243-2.13-.073-1.521.097-.863.62-.364.607.049.388.62.12.912.146 2.164.194 2.14.146 1.493.073.582v.146l.049-.024.51-1.004.924-1.616 1.04-1.738.82-1.21.68-.863.634-.437.68.073.34.486-.049.62-.485.985-1.04 1.956-.874 1.738-.68 1.42-.097.267.024.024.073-.073.51-.461 1.197-.936.985-.78.765-.678.51-.292.05.024.049.17 1.39.34 1.956.364 1.956.194 1.256v.317l.073.61-.583.364-.62-.049-.753-.656-1.04-1.004-1.49-1.295-1.004-.912-.607-.437h-.049l.024.073.34.937.412 1.665.267 1.614.073 1.04-.073.62-.461.291-.632-.048-.34-.388-.34-1.21-.316-1.907-.315-1.592-.195-.937-.12-.339-.024.024-.024.097-.097.34-.534 1.904-.411 1.86-.025.777-.194.534-.46.17-.56-.34-.22-.62.049-.413.219-1.152.461-1.881.34-1.762.219-1.29.024-.034-.034.01-.453.34-1.198.961-1.441 1.2-.912.936-.607.534-.17.583.073.34.437.049.51-.34.583-.62.766-.985.96-.582.61-.679.559-.046.049z"/>
+                            </svg>
+                          </div>
+                          <div class="ai-card-info">
+                            <span class="ai-card-name">Claude</span>
+                            <span class="ai-card-sub">by Anthropic</span>
+                          </div>
+                          <span class="ai-card-badge ai-badge-auto"><i class="fa fa-bolt"></i> Auto</span>
+                        </button>
+                      </div>
+
+                      <!-- Gemini -->
+                      <div class="col-xl-3 col-md-6">
+                        <button class="ai-card-btn ai-card-gemini w-100" id="btn-gemini" onclick="analyzeWithAI('gemini')" aria-label="Analyze with Gemini">
+                          <div class="ai-card-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:30px;height:30px;">
+                              <defs>
+                                <linearGradient id="gemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                  <stop offset="0%" style="stop-color:#4285F4"/>
+                                  <stop offset="50%" style="stop-color:#9B72CB"/>
+                                  <stop offset="100%" style="stop-color:#D96570"/>
+                                </linearGradient>
+                              </defs>
+                              <path fill="url(#gemGrad)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"/>
+                            </svg>
+                          </div>
+                          <div class="ai-card-info">
+                            <span class="ai-card-name">Gemini</span>
+                            <span class="ai-card-sub">by Google</span>
+                          </div>
+                          <span class="ai-card-badge ai-badge-paste"><i class="fa fa-clipboard"></i> Paste</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                    <!-- Legend -->
+                    <div class="ai-legend mt-3">
+                      <span class="ai-legend-item"><span class="ai-badge-dot auto"></span><i class="fa fa-bolt"></i> Auto — opens AI with prompt already submitted</span>
+                      <span class="ai-legend-item"><span class="ai-badge-dot paste"></span><i class="fa fa-clipboard"></i> Paste — prompt copied to clipboard, press Ctrl+V</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ===== /Analyze with AI Section ===== -->
+
+            <!-- Toast Notification -->
+            <div class="ai-toast" id="aiToast" role="alert" aria-live="assertive">
+              <i class="fa fa-check-circle me-2"></i>
+              <span id="aiToastMsg">Opening AI with your prompt...</span>
+            </div>
+
+
+
+
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
@@ -262,7 +372,7 @@
                         <i class="fa fa-rocket" aria-hidden="true"></i>
                         <h2>What's Next?</h2>
                       </div>
-                      <p>Let’s get started — your journey with Pixel AI begins here!</p>
+                      <p>Let's get started — your journey with Pixel AI begins here!</p>
                     </div>
                     <div class="row gy-4">
                       <div class="col-md-4 col-sm-6">
@@ -323,4 +433,66 @@
   <script src="assets/js/document/main.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/global-search.js"></script>
+
+  <script>
+    // =============================================
+    // Analyze with AI Feature
+    // =============================================
+
+    function buildPrompt() {
+      const pageUrl = window.location.href.split('?')[0];
+      return 'Step 1: Context\nYou are analyzing a documentation page from the Pixel AI software project — an advanced AI content and image generation platform.\n\nStep 2: Task\nAnalyze the full content of the page provided at the source link below.\n\nStep 3: What to Deliver\nProduce a clear, well-structured summary that includes:\n- The central purpose or theme of the page\n- Key concepts, features, or instructions explained\n- Any important technical details or workflows\n- Notable conclusions, outcomes, or best practices\n\nStep 4: Quality Guidelines\n- Keep the summary concise but comprehensive\n- Use headings or bullet points where helpful\n- Avoid assumptions — reflect only what is present on the page\n- Write in simple, developer-friendly language\n\nStep 5: Source Reference\nAt the end of the summary, include this source link for reference:\n\nSource: ' + pageUrl;
+    }
+
+    function analyzeWithAI(aiName) {
+      const prompt = buildPrompt();
+      const encoded = encodeURIComponent(prompt);
+      let url;
+
+      if (aiName === 'chatgpt') {
+        url = 'https://chatgpt.com/?q=' + encoded;
+        showToast('Opening ChatGPT — prompt auto-submitted!');
+      } else if (aiName === 'perplexity') {
+        url = 'https://www.perplexity.ai/?q=' + encoded;
+        showToast('Opening Perplexity — prompt auto-submitted!');
+      } else if (aiName === 'claude') {
+        url = 'https://claude.ai/new?q=' + encoded;
+        showToast('Opening Claude — prompt auto-submitted!');
+      } else if (aiName === 'gemini') {
+        fallbackCopy(prompt);
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(prompt).catch(function() {});
+        }
+        url = 'https://gemini.google.com/app';
+        showToast('Prompt copied! Paste in Gemini with Ctrl+V');
+      }
+
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    function fallbackCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.cssText = 'position:fixed;top:-9999px;left:-9999px;opacity:0;';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try { document.execCommand('copy'); } catch(e) {}
+      document.body.removeChild(ta);
+    }
+
+
+
+    let toastTimer;
+    function showToast(msg) {
+      const toast = document.getElementById('aiToast');
+      const msgEl = document.getElementById('aiToastMsg');
+      if (!toast) return;
+      msgEl.textContent = msg;
+      toast.classList.add('ai-toast-show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('ai-toast-show'), 3500);
+    }
+  </script>
 </html>
+

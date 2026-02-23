@@ -7,9 +7,12 @@
     <meta name="description" content="Pixel AI - CPanel Deployment" />
     <meta name="author" content="pixelstrap" />
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <title>Deployment CPanel - Pixel AI documentation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/global-search.css" />
@@ -143,39 +146,68 @@
         <div class="content card-hover-effect">
           <div class="row">
             <div class="col-sm-12">
-              <button class="btn sidebar-button">Menu</button>
-              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Deploying API to CPanel</h4>
+              <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> CPanel Application Hosting</h4>
             </div>
+            
             <div class="col-12">
-              <div class="card">
-                <div class="card-body ul-body">
-                  <h3 class="main-sub-title">1. Setup Node.js App</h3>
-                  <p>In your CPanel, search for <b>Setup Node.js App</b>. Click <b>Create Application</b>.</p>
-
-                  <h3 class="main-sub-title">2. Application Settings</h3>
-                  <ul>
-                    <li><b>Node.js version:</b> Choose the latest LTS (18+).</li>
-                    <li><b>Application Root:</b> Specify your project folder (e.g., api_pixelai).</li>
-                    <li><b>Application URL:</b> Select your subdomain.</li>
-                    <li><b>Startup file:</b> Set to <b>server.js</b>.</li>
-                  </ul>
-
-                  <h3 class="main-sub-title">3. Upload & Install</h3>
-                  <p>Upload your <b>pixel-ai</b> backend files (excluding node_modules) via File Manager. Back in the Node.js App interface, click <b>Run NPM Install</b>.</p>
-
-                  <h3 class="main-sub-title">4. Environment Variables</h3>
-                  <p>Scroll down to <b>Environment variables</b> and add all keys from your <b>.env</b> file.</p>
-                </div>
-              </div>
+              <p class="mb-4 text-muted">CPanel is a popular choice for traditional web hosting. Follow these steps to deploy the Pixel AI Backend using the <b>Node.js Selector</b>.</p>
             </div>
 
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
+                  <!-- Step 1 -->
+                  <div class="mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">1</div>
+                      <h3 class="main-sub-title mb-0 mt-0">Prepare Node.js App</h3>
+                    </div>
+                    <p class="text-muted small mb-3">Login to your CPanel dashboard, navigate to the <b>Software</b> section, and select <b>Setup Node.js App</b>. Click <b>Create Application</b>.</p>
+                  </div>
+
+                  <!-- Step 2 -->
+                  <div class="mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">2</div>
+                      <h3 class="main-sub-title mb-0 mt-0">Application Settings</h3>
+                    </div>
+                    <ul class="list-unstyled small text-muted">
+                      <li class="mb-2"><b>Node.js Version:</b> Select 18.x or the latest LTS.</li>
+                      <li class="mb-2"><b>Application Mode:</b> Set to <b>Production</b>.</li>
+                      <li class="mb-2"><b>Application Root:</b> Path where you uploaded files (e.g., <code>api_pixelai</code>).</li>
+                      <li class="mb-2"><b>Startup File:</b> Set this to <code>server.js</code>.</li>
+                    </ul>
+                  </div>
+
+                  <!-- Step 3 -->
+                  <div class="mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">3</div>
+                      <h3 class="main-sub-title mb-0 mt-0">Deployment & Install</h3>
+                    </div>
+                    <p class="text-muted small mb-3">Upload your <code>pixel-ai</code> backend files (excluding <code>node_modules</code>) via File Manager. Once uploaded, return to the Node.js interface and click <b>Run NPM Install</b>.</p>
+                  </div>
+
+                  <!-- Step 4 -->
+                  <div>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">4</div>
+                      <h3 class="main-sub-title mb-0 mt-0">Environment Variables</h3>
+                    </div>
+                    <p class="text-muted small mb-3">In the Node.js App interface, scroll down to <b>Environment Variables</b> and manually add all keys from your <code>.env</code> file (e.g., MONGODB_URI, GEMINI_API_KEY, etc.).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-4">
+              <div class="card">
+                <div class="card-body">
                   <div class="steps-box">
                     <div class="steps-title">
                       <div><i class="fa fa-rocket"></i><h2>What's Next?</h2></div>
-                      <p>Installation complete! Explore the features.</p>
+                      <p>Installation complete! Ready to explore?</p>
                     </div>
                     <div class="row gy-4">
                       <div class="col-md-4 col-sm-6">
@@ -187,13 +219,13 @@
                       <div class="col-md-4 col-sm-6">
                         <a href="advanced-features.html" class="steps-content">
                           <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
-                          <div class="steps-items"><h3>Advanced Features</h3><p>Subscriptions & OAuth</p></div>
+                          <div class="steps-items"><h3>Advanced Tools</h3><p>Subscriptions & OAuth</p></div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
                         <a href="admin-module.html" class="steps-content">
                           <div class="icon"><img src="assets/images/icon/6.png" alt="" /></div>
-                          <div class="steps-items"><h3>Admin Module</h3><p>User Management</p></div>
+                          <div class="steps-items"><h3>Admin Dashboard</h3><p>Manage users & plans</p></div>
                         </a>
                       </div>
                     </div>
@@ -206,5 +238,13 @@
       </div>
     </div>
     <footer><div class="container"><div class="row footer-theme partition-f"><div class="col-12">Copyright 2026 © Pixel AI</div></div></div></footer>
+    <div class="bg-overlay"></div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="assets/js/document/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/global-search.js"></script>
   </body>
 </html>

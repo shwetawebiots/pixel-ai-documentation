@@ -7,9 +7,12 @@
     <meta name="description" content="Pixel AI - Backend Live Server" />
     <meta name="author" content="pixelstrap" />
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <title>Backend Live Server - Pixel AI documentation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/global-search.css" />
@@ -143,53 +146,82 @@
         <div class="content card-hover-effect">
           <div class="row">
             <div class="col-sm-12">
-              <button class="btn sidebar-button">Menu</button>
-              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Live API Configuration</h4>
+              <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Live API Hardening & Config</h4>
             </div>
+            
             <div class="col-12">
-              <div class="card">
-                <div class="card-body ul-body">
-                  <h3 class="main-sub-title">1. Production Best Practices</h3>
-                  <ul>
-                    <li><b>Process Management:</b> Use PM2 for process monitoring and automatic restarts.</li>
-                    <li><b>Reverse Proxy:</b> Use Nginx to handle SSL and serve the API on standard ports (80/443).</li>
-                    <li><b>Database Security:</b> Ensure MongoDB is not accessible from the public web; use IP whitelisting.</li>
-                  </ul>
-
-                  <h3 class="main-sub-title">2. PM2 Configuration</h3>
-                  <div class="code-block">
-                    <ul>
-                      <li>npm install pm2 -g</li>
-                      <li>pm2 start server.js --name pixel-ai-api</li>
-                      <li>pm2 save</li>
-                    </ul>
-                  </div>
-
-                  <h3 class="main-sub-title">3. Environment Hardening</h3>
-                  <p>In a live environment, ensure <b>PUBLIC_URL</b> is set to your actual domain.</p>
-                  <div class="code-block">
-                    <ul>
-                      <li>PUBLIC_URL=https://api.yourdomain.com</li>
-                      <li>ALLOWED_ORIGINS=https://app.yourdomain.com</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <p class="mb-4 text-muted">When moving to a production environment, security and stability are paramount. Follow these professional best practices to host your Pixel AI Backend.</p>
             </div>
 
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
+                  <!-- Section 1 -->
+                  <div class="mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">1</div>
+                      <h3 class="main-sub-title mb-0 mt-0">Production Best Practices</h3>
+                    </div>
+                    <ul class="list-unstyled small text-muted">
+                      <li class="mb-3 d-flex align-items-start"><i class="fa fa-check text-success me-2 mt-1"></i> <div><b>Process Management:</b> Always use <b>PM2</b> for continuous monitoring and automatic restarts on failure.</div></li>
+                      <li class="mb-3 d-flex align-items-start"><i class="fa fa-check text-success me-2 mt-1"></i> <div><b>Reverse Proxy:</b> Deploy an <b>Nginx</b> or Apache reverse proxy to handle SSL termination and load balancing.</div></li>
+                      <li class="mb-3 d-flex align-items-start"><i class="fa fa-check text-success me-2 mt-1"></i> <div><b>Database Security:</b> Restrict MongoDB access via firewall or IP whitelisting. Use MONGODB_SRV for Atlas.</div></li>
+                    </ul>
+                  </div>
+
+                  <!-- Section 2 -->
+                  <div class="mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">2</div>
+                      <h3 class="main-sub-title mb-0 mt-0">Continuous Execution (PM2)</h3>
+                    </div>
+                    <p class="text-muted small mb-3">Reliability is key for background AI processing. PM2 ensures your server stays alive 24/7.</p>
+                    <div class="code-block p-4 bg-light rounded border shadow-sm">
+                      <pre class="mb-0"><code><span class="text-info"># Install process manager globally</span>
+npm install pm2 -g
+
+<span class="text-info"># Start the backend engine</span>
+pm2 start server.js --name pixel-ai-api
+
+<span class="text-info"># Ensure it restarts on system reboot</span>
+pm2 save</code></pre>
+                    </div>
+                  </div>
+
+                  <!-- Section 3 -->
+                  <div>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">3</div>
+                      <h3 class="main-sub-title mb-0 mt-0">Domain & URL Hardening</h3>
+                    </div>
+                    <p class="text-muted small mb-3">Update your core environment variables to match your live production domains.</p>
+                    <div class="code-block p-4 bg-light rounded border shadow-sm mb-4">
+                      <pre class="mb-0"><code>NODE_ENV=production
+PUBLIC_URL=https://api.yourdomain.com
+ALLOWED_ORIGINS=https://app.yourdomain.com</code></pre>
+                    </div>
+                    <div class="alert alert-light border-start border-4 border-warning bg-light p-3">
+                      <p class="small mb-0 fw-500"><i class="fa fa-warning text-warning me-2"></i> <b>CORS Alert:</b> Ensure <code>ALLOWED_ORIGINS</code> exactly matches your frontend URL to prevent browser blocking.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-4">
+              <div class="card">
+                <div class="card-body">
                   <div class="steps-box">
                     <div class="steps-title">
                       <div><i class="fa fa-rocket"></i><h2>What's Next?</h2></div>
-                      <p>Ready to deploy the frontend?</p>
+                      <p>Finish the journey with frontend hosting!</p>
                     </div>
                     <div class="row gy-4">
                       <div class="col-md-4 col-sm-6">
                         <a href="deployment-vercel.html" class="steps-content">
                           <div class="icon"><img src="assets/images/icon/7.png" alt="" /></div>
-                          <div class="steps-items"><h3>Vercel Deployment</h3><p>Fast frontend hosting</p></div>
+                          <div class="steps-items"><h3>Vercel Deploy</h3><p>Fast frontend hosting</p></div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
@@ -201,7 +233,7 @@
                       <div class="col-md-4 col-sm-6">
                         <a href="core-features.html" class="steps-content">
                           <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
-                          <div class="steps-items"><h3>Core Features</h3><p>Explore AI capabilities</p></div>
+                          <div class="steps-items"><h3>Core Features</h3><p>Diving into features</p></div>
                         </a>
                       </div>
                     </div>
@@ -214,5 +246,13 @@
       </div>
     </div>
     <footer><div class="container"><div class="row footer-theme partition-f"><div class="col-12">Copyright 2026 © Pixel AI</div></div></div></footer>
+    <div class="bg-overlay"></div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="assets/js/document/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/global-search.js"></script>
   </body>
 </html>

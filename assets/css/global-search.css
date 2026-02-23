@@ -1,5 +1,5 @@
 /**
- * Meetzy documentation Global Search Styles
+ * Pixel AI documentation Global Search Styles
  */
 
 /* Search Container Positioning */
@@ -27,6 +27,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -94,7 +95,7 @@
 
 .search-result-page {
   font-size: 12px;
-  color: #0f98a0;
+  color: var(--theme-deafult);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -103,7 +104,7 @@
 }
 
 .dark-only .search-result-page {
-  color: #0f98a0;
+  color: var(--theme-deafult);
 }
 
 .search-result-relevance {
@@ -146,7 +147,7 @@
 }
 
 .dark-only .search-result-item mark {
-  background-color: #0f98a0;
+  background-color: var(--theme-deafult);
   color: #ffffff;
 }
 
@@ -168,7 +169,7 @@
   width: 20px;
   height: 20px;
   border: 3px solid #e5e5e5;
-  border-top-color: #0f98a0;
+  border-top-color: var(--theme-deafult);
   border-radius: 50%;
   margin-left: 10px;
   animation: spin 0.8s linear infinite;
@@ -263,6 +264,7 @@
     max-height: 60vh;
   }
 }
+
 @media (max-width: 448px) {
   .search-results-container {
     bottom: -10px;
@@ -272,13 +274,13 @@
 /* Search Input Focus Enhancement */
 .home-search input[type="search"]:focus {
   outline: none;
-  border-color: #0f98a0;
-  box-shadow:0 0 0 3px rgb(103 234 240 / 10%);
+  border-color: var(--theme-deafult);
+  box-shadow: 0 0 0 3px rgb(103 234 240 / 10%);
 }
 
 /* Keyboard Navigation Support */
 .search-result-item:focus {
-  outline: 2px solid #0f98a0;
+  outline: 2px solid var(--theme-deafult);
   outline-offset: -2px;
   background-color: #f8f9fa;
 }
