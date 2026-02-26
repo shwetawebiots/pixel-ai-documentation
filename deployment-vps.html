@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pixel AI - Deployment (VPS)" />
+    <meta name="author" content="pixelstrap" />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <title>Deployment (VPS) - Pixel AI documentation</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css" />
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css" />
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Global Search css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/global-search.css" />
+  </head>
+
+  <body>
+    <a href="javascript:void(0)" class="sidebar-overlay"></a>
+    <div class="tap-top"><i data-feather="chevrons-up"></i><p>Top</p></div>
+    <div>
+     <div class="home-section">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container custom-container">
+            <div class="main-menu">
+              <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa fa-bars"> </i>
+              </button>
+              <a class="navbar-brand" href="index.html"> <h2 style="color: white; margin: 0;">Pixel AI</h2></a>
+              <div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav menu">
+                    <li class="nav-item active"><a class="nav-link" href="#" target="_blank">Purchase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" target="_blank">Support</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" target="_blank">Frontend</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" target="_blank">Admin</a></li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="nav-right">
+                <li>
+                  <div class="btn-group">
+                    <a class="decrease btn btn-doc" href="#" title="Decrease font size">A-</a
+                    ><a class="reset btn btn-doc" href="#" title="Default font size">A</a
+                    ><a class="increase btn btn-doc" href="#" title="Increase font size">A+</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="btn btn-light mode" href="#" title="Dark"><i class="fa fa-moon-o"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container custom-container">
+          <div class="document">Pixel AI documentation</div>
+          <div class="top-heading">
+            <h2>Generate high-quality content, images, and code effortlessly with Pixel AI</h2>
+            <div class="home-search">
+              <input type="search" name="text" placeholder="Search..." />
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container custom-container" id="mainRightNavbar">
+      <div class="document-main">
+        <div class="left-sidebar">
+          <div class="card">
+            <div class="card-body">
+              <aside>
+                <button class="btn button-close">
+                  <span>Close</span>
+                  <i data-feather="x"></i>
+                </button>
+                <ul class="list-unstyled nav-sidebar doc-nav">
+                  <li class="nav-item">
+                    <div class="title"><a class="nav-link" href="index.html">Introduction</a></div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="title"><a class="nav-link" href="prerequisite.html">Prerequisite</a></div>
+                  </li>
+                  <li class="nav-item menu">
+                    <div class="title">
+                      <a class="nav-link" href="#!"
+                        >Pixel AI Installation <i class="fa fa-angle-down" aria-hidden="true"></i
+                       ></a>
+                    </div>
+                    <ul class="sub-menu">
+                      <li class="nav-item"><a href="overview.html" class="nav-link">Overview</a></li>
+                      <li class="nav-item"><a href="frontend-installation.html" class="nav-link">Frontend Installation</a></li>
+                      <li class="nav-item menu">
+                        <div class="title">
+                          <a class="nav-link" href="#!"
+                            >Backend Installation <i class="fa fa-angle-down" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <ul class="sub-menu nested-sub-menu">
+                          <li class="nav-item"><a href="backend-local-server.html" class="nav-link">Local Server</a></li>
+                          <li class="nav-item"><a href="backend-live-server.html" class="nav-link">Live Server</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item menu">
+                    <div class="title">
+                      <a class="nav-link" href="#!"
+                        >Deployment <i class="fa fa-angle-down" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                    <ul class="sub-menu">
+                      <li class="nav-item"><a href="deployment-vps.html" class="nav-link">Virtual Private Server</a></li>
+                      <li class="nav-item"><a href="deployment-vercel.html" class="nav-link">Vercel</a></li>
+                      <li class="nav-item"><a href="deployment-cpanel.html" class="nav-link">C-panel</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <div class="title"><a class="nav-link" href="core-features.html">Core Features</a></div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="title"><a class="nav-link" href="human-agent.html">Human Agent for External Chatbot</a></div>
+                  </li>
+                  <li class="nav-item menu">
+                    <div class="title">
+                      <a class="nav-link" href="#!"
+                        >AI Chatbot <i class="fa fa-angle-down" aria-hidden="true"></i
+                       ></a>
+                    </div>
+                    <ul class="sub-menu">
+                      <li class="nav-item"><a href="chatbot-widget.html" class="nav-link">Chatbot Widget</a></li>
+                      <li class="nav-item"><a href="chatbot-telegram.html" class="nav-link">Telegram Integration</a></li>
+                      <li class="nav-item"><a href="chatbot-whatsapp.html" class="nav-link">WhatsApp Integration</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
+                  </li>
+                  <li class="nav-item menu"><div class="title"><a class="nav-link" href="#!">Admin Module <i class="fa fa-angle-down" aria-hidden="true"></i></a></div><ul class="sub-menu"><li class="nav-item"><a href="admin-user-management.html" class="nav-link">User Management</a></li><li class="nav-item"><a href="admin-role-management.html" class="nav-link">Role Management</a></li><li class="nav-item"><a href="admin-plans.html" class="nav-link">Subscription Plans</a></li><li class="nav-item"><a href="admin-faq.html" class="nav-link">FAQ Management</a></li><li class="nav-item"><a href="admin-pages.html" class="nav-link">Pages Management</a></li><li class="nav-item"><a href="admin-settings.html" class="nav-link">System Settings</a></li></ul></li>
+                  <li class="nav-item">
+                    <div class="title"><a class="nav-link" href="technologies.html">Technologies Used</a></div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="title"><a class="nav-link" href="changelog.html">Change Log</a></div>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <div class="content card-hover-effect">
+          <div class="row">
+            <div class="col-sm-12">
+              <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Deployment (VPS)</h4>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <p class="mb-4">This guide explains how to deploy the <b>Pixel-AI</b> backend on a VPS (Virtual Private Server). You will configure the server, install required software, secure the database, and run Pixel-AI in a production-ready environment.</p>
+                  <p>VPS deployment is recommended because it provides Full server control, Better performance tuning, Secure API handling, SSL support, Background processing (AI jobs, queue workers), Scalability for SaaS growth.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">3.1 System Setup</h5>
+                  <p class="text-muted small mb-3">After connecting to your VPS via SSH:</p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>sudo apt update && sudo apt upgrade -y
+sudo apt install curl wget git unzip build-essential -y</code></pre>
+                  </div>
+                  <p class="text-muted small">These utilities are required for installing Node.js, MongoDB, and managing your backend.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">3.2 Install Node.js Runtime</h5>
+                  <p class="text-muted small mb-3">Pixel-AI backend runs on Node.js. Install latest LTS (recommended for production):</p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt install -y nodejs</code></pre>
+                  </div>
+                  <p class="text-muted small mb-3">Verify installation:</p>
+                  <div class="code-block p-3 bg-light rounded border">
+                    <pre class="mb-0"><code>node -v
+npm -v</code></pre>
+                  </div>
+                  <p class="text-muted small mt-2">You should see Node 22.x (or latest LTS).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">3.3 Install & Configure MongoDB (Database)</h5>
+                  <p class="text-muted small mb-3">Pixel-AI uses MongoDB to store: Users, Human Agent, AI generations, API usage, AI Chatbot, Prompt history.</p>
+                  
+                  <p class="mb-2"><b>Step 1 — Import MongoDB GPG Key (Version 8.0)</b></p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | \
+sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg --dearmor</code></pre>
+                  </div>
+
+                  <p class="mb-2"><b>Step 2 — Add Repository (Ubuntu 24.04 / 22.04)</b></p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code><span class="text-info"># For Ubuntu 24.04 (noble):</span>
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.0 multiverse" | \
+sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+
+<span class="text-info"># Note: For Ubuntu 22.04 use "jammy" instead of "noble".</span></code></pre>
+                  </div>
+
+                  <p class="mb-2"><b>Step 3 — Install MongoDB</b></p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>sudo apt update
+sudo apt install -y mongodb-org</code></pre>
+                  </div>
+
+                  <p class="mb-2"><b>Step 4 — Start & Enable Service</b></p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>sudo systemctl start mongod
+sudo systemctl enable mongod</code></pre>
+                  </div>
+
+                  <p class="mb-2"><b>Step 5 — Verify Installation</b></p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>sudo systemctl status mongod
+mongod --version
+mongosh --version</code></pre>
+                  </div>
+                  <div class="alert alert-warning small mb-0"><i class="fa fa-warning me-2"></i> Never expose MongoDB publicly. Keep bindIp to localhost.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">3.4 Deploy Pixel-AI Backend Code</h5>
+                  <p class="text-muted small mb-3">Clone your backend repository:</p>
+                  <div class="code-block p-3 bg-light rounded border">
+                    <pre class="mb-0"><code>git clone https://github.com/yourusername/pixel-ai-backend.git
+cd pixel-ai-backend
+npm install --production</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">3.5 Configure Environment Variables</h5>
+                  <p class="text-muted small mb-3">Create <code>.env</code> file:</p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>nano .env</code></pre>
+                  </div>
+                  <p class="text-muted small mb-2">Example Production Configuration:</p>
+                  <div class="code-block p-3 bg-light rounded border">
+                    <pre class="mb-0"><code>NODE_ENV=production
+PORT=3000
+
+MONGODB_URI=YOUR_MONGODB_CONNECTION_STRING
+JWT_SECRET=YOUR_SUPER_SECURE_RANDOM_SECRET
+
+APP_DEMO_MODE=true
+
+BASE_URL=
+PUBLIC_URL=
+FRONTEND_URL=
+
+# Admin Credentials
+ADMIN_EMAIL=YOUR_ADMIN_EMAIL
+ADMIN_PASSWORD=YOUR_ADMIN_PASSWORD
+ADMIN_NAME=Admin
+
+REDIS_URL=
+
+GEMINI_API_KEY=
+
+INSTAGRAM_VERIFY_TOKEN=
+ENCRYPTION_KEY=
+
+ALLOWED_ORIGINS=</code></pre>
+                  </div>
+                  <div class="alert alert-info small mt-3 mb-0"><i class="fa fa-info-circle me-2"></i> Pixel-AI being a SaaS platform requires secure API key storage. Never commit .env.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">3.6 Process Management (PM2)</h5>
+                  <p class="text-muted small mb-3">Install PM2 and start backend:</p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>sudo npm install -g pm2
+pm2 start server.js --name pixelai-backend
+pm2 save
+pm2 startup</code></pre>
+                  </div>
+                  <p class="text-muted small mb-3">Check logs:</p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>pm2 logs pixelai-backend</code></pre>
+                  </div>
+                  <p class="text-muted small mb-0">PM2 ensures: Auto restart on crash, Background execution, Memory monitoring, Log management.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">3.7 Reverse Proxy Setup (Nginx)</h5>
+                  <p class="text-muted small mb-3">Pixel-AI runs internally on port 5000. Install Nginx and create config:</p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>sudo apt install nginx -y
+sudo nano /etc/nginx/sites-available/pixelai</code></pre>
+                  </div>
+                  <p class="text-muted small mb-2">Add configuration:</p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>server {
+   listen 80;
+   server_name your-domain.com;
+
+   location / {
+       proxy_pass http://localhost:5000;
+       proxy_http_version 1.1;
+       proxy_set_header Upgrade $http_upgrade;
+       proxy_set_header Connection 'upgrade';
+       proxy_set_header Host $host;
+       proxy_cache_bypass $http_upgrade;
+   }
+}</code></pre>
+                  </div>
+                  <p class="text-muted small mb-2">Enable configuration:</p>
+                  <div class="code-block p-3 bg-light rounded border">
+                    <pre class="mb-0"><code>sudo ln -s /etc/nginx/sites-available/pixelai /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">3.8 Enable SSL (HTTPS)</h5>
+                  <p class="text-muted small mb-3">Install Certbot and generate SSL:</p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>sudo apt install certbot python3-certbot-nginx -y
+sudo certbot --nginx -d your-domain.com</code></pre>
+                  </div>
+                  <p class="text-muted small mb-2">Set up auto renewal:</p>
+                  <div class="code-block p-3 bg-light rounded border">
+                    <pre class="mb-0"><code>sudo crontab -e
+<span class="text-info"># Add the following line:</span>
+0 12 * * * /usr/bin/certbot renew --quiet</code></pre>
+                  </div>
+                  <p class="text-muted small mt-2">Now Pixel-AI runs securely via HTTPS.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">3.9 Testing & Verification</h5>
+                  <p class="text-muted small mb-3">Test health endpoint and common features:</p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>https://your-domain.com/api/health</code></pre>
+                  </div>
+                  <p class="text-muted small">Check: Authentication, AI generation endpoints, Payment webhooks, Email campaigns, Ai chatbot creation.</p>
+                  <p class="text-muted small mb-0">Logs: <code>pm2 logs pixelai-backend</code></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">3.10 Maintenance & Updates</h5>
+                  <p class="text-muted small mb-3">To update backend:</p>
+                  <div class="code-block p-3 bg-light rounded border mb-3">
+                    <pre class="mb-0"><code>cd pixel-ai-backend
+git pull origin main
+npm install --production
+pm2 restart pixelai-backend</code></pre>
+                  </div>
+                  <p class="text-muted small mb-0">Regularly monitor: CPU & RAM, MongoDB memory usage, Disk space, Payment webhook logs, SSL renewal status.</p>
+                </div>
+              </div>
+            </div>
+
+                        <!-- What's Next Section -->
+            <div class="col-12 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="steps-box"><div class="steps-title">
+                      <div><i class="fa fa-rocket"></i><h5>What's Next?</h5></div>
+                      <p>Let's get started — your journey with Pixel AI begins here!</p>
+                    </div>
+                    <div class="row gy-4">
+                      <div class="col-md-4 col-sm-6">
+                        <a href="deployment-vercel.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/3.png" alt="" /></div>
+                          <div class="steps-items"><h5>Vercel Deployment</h5><p>Cloud Hosting</p></div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <a href="deployment-cpanel.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
+                          <div class="steps-items"><h5>C-Panel Deployment</h5><p>Simple Hosting</p></div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <a href="core-features.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
+                          <div class="steps-items"><h5>Core Features</h5><p>Platform Essentials</p></div>
+                        </a>
+                      </div>
+                    </div></div>
+                    </div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer><div class="container"><div class="row footer-theme partition-f"><div class="col-12">Copyright 2026 © Pixel AI</div></div></div></footer>
+    <div class="bg-overlay"></div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="assets/js/document/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/global-search.js"></script>
+  </body>
+</html>

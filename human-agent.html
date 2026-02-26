@@ -4,20 +4,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pixel AI - Installation" />
-    <meta name="keywords" content="Pixel AI, AI Documentation, NextJS, Nodejs" />
+    <meta name="description" content="Pixel AI - Human Agent for External Chatbot" />
     <meta name="author" content="pixelstrap" />
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
-    <title>Installation - Pixel AI documentation</title>
+    <title>Human Agent for External Chatbot - Pixel AI documentation</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
     <!-- Font Awesome-->
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
     <!-- Feather icon-->
@@ -31,15 +26,10 @@
   </head>
 
   <body>
-    <!-- tap on top starts-->
     <a href="javascript:void(0)" class="sidebar-overlay"></a>
-    <div class="tap-top">
-      <i data-feather="chevrons-up"></i>
-      <p>Top</p>
-    </div>
-    <!-- tap on tap ends-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i><p>Top</p></div>
     <div>
-      <div class="home-section">
+     <div class="home-section">
         <nav class="navbar navbar-expand-lg">
           <div class="container custom-container">
             <div class="main-menu">
@@ -94,7 +84,7 @@
     </div>
     <div class="container custom-container" id="mainRightNavbar">
       <div class="document-main">
-       <div class="left-sidebar">
+        <div class="left-sidebar">
           <div class="card">
             <div class="card-body">
               <aside>
@@ -113,7 +103,7 @@
                     <div class="title">
                       <a class="nav-link" href="#!"
                         >Pixel AI Installation <i class="fa fa-angle-down" aria-hidden="true"></i
-                      ></a>
+                       ></a>
                     </div>
                     <ul class="sub-menu">
                       <li class="nav-item"><a href="overview.html" class="nav-link">Overview</a></li>
@@ -146,7 +136,7 @@
                   <li class="nav-item">
                     <div class="title"><a class="nav-link" href="core-features.html">Core Features</a></div>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <div class="title"><a class="nav-link" href="human-agent.html">Human Agent for External Chatbot</a></div>
                   </li>
                   <li class="nav-item menu">
@@ -164,21 +154,7 @@
                   <li class="nav-item">
                     <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
                   </li>
-                  <li class="nav-item menu">
-                    <div class="title">
-                      <a class="nav-link" href="#!"
-                        >Admin Module <i class="fa fa-angle-down" aria-hidden="true"></i
-                       ></a>
-                    </div>
-                    <ul class="sub-menu">
-                      <li class="nav-item"><a href="admin-user-management.html" class="nav-link">User Management</a></li>
-                      <li class="nav-item"><a href="admin-role-management.html" class="nav-link">Role Management</a></li>
-                      <li class="nav-item"><a href="admin-plans.html" class="nav-link">Subscription Plans</a></li>
-                      <li class="nav-item"><a href="admin-faq.html" class="nav-link">FAQ Management</a></li>
-                      <li class="nav-item"><a href="admin-pages.html" class="nav-link">Pages Management</a></li>
-                      <li class="nav-item"><a href="admin-settings.html" class="nav-link">System Settings</a></li>
-                    </ul>
-                  </li>
+                  <li class="nav-item menu"><div class="title"><a class="nav-link" href="#!">Admin Module <i class="fa fa-angle-down" aria-hidden="true"></i></a></div><ul class="sub-menu"><li class="nav-item"><a href="admin-user-management.html" class="nav-link">User Management</a></li><li class="nav-item"><a href="admin-role-management.html" class="nav-link">Role Management</a></li><li class="nav-item"><a href="admin-plans.html" class="nav-link">Subscription Plans</a></li><li class="nav-item"><a href="admin-faq.html" class="nav-link">FAQ Management</a></li><li class="nav-item"><a href="admin-pages.html" class="nav-link">Pages Management</a></li><li class="nav-item"><a href="admin-settings.html" class="nav-link">System Settings</a></li></ul></li>
                   <li class="nav-item">
                     <div class="title"><a class="nav-link" href="technologies.html">Technologies Used</a></div>
                   </li>
@@ -193,72 +169,145 @@
         <div class="content card-hover-effect">
           <div class="row">
             <div class="col-sm-12">
-              <button class="btn sidebar-button">Menu</button>
-              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Installation</h4>
+              <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Human Agent for External Chatbot</h4>
             </div>
-            
-            <div class="col-12" id="backend">
+
+            <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="main-sub-title">1. Backend Installation (pixel-ai)</h5>
-                  <p>Follow these steps to set up the Node.js/Express backend:</p>
-                  <pre class="bg-light p-3"><code># Clone the project
-git clone [backend-repo-url] pixel-ai
-
-# Navigate to directory
-cd pixel-ai
-
-# Install dependencies
-npm install
-
-# Copy environment file
-cp .env.example .env
-
-# Start in development mode
-npm run dev</code></pre>
-                  <p><b>Important:</b> Ensure your `.env` file is updated with MongoDB URI and AI API keys.</p>
+                  <p>The <b>Human Support for External chatbot</b> widget enables users to switch from automated AI responses to a real human conversation instantly. When activated, your chatbot can escalate discussions to a live agent without interrupting the chat experience.</p>
+                  <p>This ensures better customer satisfaction by combining automation with real-time human assistance.</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-12" id="frontend">
+            <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="main-sub-title">2. Frontend Installation (pixel-ai-next)</h5>
-                  <p>Follow these steps to set up the Next.js frontend:</p>
-                  <pre class="bg-light p-3"><code># Clone the project
-git clone [frontend-repo-url] pixel-ai-next
-
-# Navigate to directory
-cd pixel-ai-next
-
-# Install dependencies
-npm install
-
-# Start in development mode
-npm run dev</code></pre>
-                  <p>The frontend will be available at <code>http://localhost:3001</code> by default.</p>
+                  <h5 class="main-sub-title mt-0">Overview</h5>
+                  <p>With this feature enabled:</p>
+                  <ul>
+                    <li>Visitors start with AI-powered responses.</li>
+                    <li>If additional help is needed, they can request live support.</li>
+                    <li>Human agents manage conversations directly from the Pixel-AI dashboard.</li>
+                    <li>All interactions happen in real-time.</li>
+                  </ul>
                 </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0">Setup Guide</h5>
+                  <p class="text-muted small">Follow the steps below to activate Human Support in Pixel-AI.</p>
+
+                  <h4 class="mt-4 mb-2">Step 1: Create & Configure Your Ably Account</h4>
+                  <p>Pixel-AI uses Ably’s real-time messaging infrastructure to power live chat.</p>
+                  <ul>
+                    <li>Sign in to your Ably dashboard.</li>
+                    <li>Open the API Keys section.</li>
+                    <li>Generate two keys:
+                      <ul>
+                        <li><b>Root Key</b> → Used as your Private Key</li>
+                        <li><b>Subscribe-Only Key</b> → Used as your Public Key</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <img src="assets/images/ably.png" class="img-fluid mb-3" alt="Ably API Keys" />
+                  <div class="alert alert-info small mt-3">
+                    <i class="fa fa-info-circle me-2"></i>
+                    Make sure the Root key has full permissions and the Subscribe-only key has subscription access only. Keep your Private Key secure and never expose it on the frontend.
+                  </div>
+
+                  <h4 class="mt-4 mb-2">Step 2: Add Ably Credentials to Pixel-AI</h4>
+                  <p>Once your keys are ready:</p>
+                  <ol>
+                    <li>Go to your Pixel-AI Admin Dashboard.</li>
+                    <li>Navigate to: <b>API Integrations → Ably Key</b>.</li>
+                    <li>Paste your <b>Private Key (Root)</b>.</li>
+                    <li>Click <b>Save Changes</b>.</li>
+                  </ol>
+                  <p>Your real-time connection layer is now active.</p>
+
+                  <h4 class="mt-4 mb-2">Step 3: Enable Live Chat in a Chatbot</h4>
+                  <p>To allow human takeover inside a chatbot:</p>
+                  <ol>
+                    <li>Open the <b>Bots</b> section in Pixel-AI.</li>
+                    <li>Create a new bot or edit an existing one.</li>
+                    <li>Locate the <b>Interaction Mode</b> setting.</li>
+                    <li>Choose one of the following:
+                      <ul>
+                        <li>🤖 <b>AI Only</b></li>
+                        <li>💬 <b>Human Only</b></li>
+                        <li>🔄 <b>Hybrid</b> (Recommended)</li>
+                      </ul>
+                    </li>
+                  </ol>
+                  <p>If <b>Hybrid</b> is enabled, users will see a support request option (such as “Talk to a Human” or similar) inside the chat widget.</p>
+
+                  <h4 class="mt-4 mb-2">Step 4: Managing Conversations as a Human Agent</h4>
+                  <p>To handle live chats:</p>
+                  <ol>
+                    <li>Go to the <b>Human Agent Panel</b> in your Pixel-AI dashboard.</li>
+                    <li>View incoming assistance requests.</li>
+                    <li>Join the conversation.</li>
+                    <li>Chat with users in real time.</li>
+                  </ol>
+                  <p>Agents can reply instantly, take over from AI, and close chats when resolved.</p>
+                </div>
+              </div>
+            </div>
+
+                        <!-- What's Next Section -->
+            <div class="col-12 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="steps-box"><div class="steps-title">
+                      <div><i class="fa fa-rocket"></i><h5>What's Next?</h5></div>
+                      <p>Let's get started — your journey with Pixel AI begins here!</p>
+                    </div>
+                    <div class="row gy-4">
+                      <div class="col-md-4 col-sm-6">
+                        <a href="core-features.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
+                          <div class="steps-items"><h5>Core Features</h5><p>Platform Essentials</p></div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <a href="chatbot-widget.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
+                          <div class="steps-items"><h5>Chatbot Widget</h5><p>Website Integration</p></div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <a href="admin-user-management.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
+                          <div class="steps-items"><h5>Admin Module</h5><p>Control Center</p></div>
+                        </a>
+                      </div>
+                    </div></div>
+                    </div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row footer-theme partition-f">
-          <div class="col-12">Copyright 2026 © Pixel AI by pixelstrap</div>
-        </div>
-      </div>
-    </footer>
+    <footer><div class="container"><div class="row footer-theme partition-f"><div class="col-12">Copyright 2026 © Pixel AI</div></div></div></footer>
     <div class="bg-overlay"></div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="assets/js/document/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/global-search.js"></script>
   </body>
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/icons/feather-icon/feather.min.js"></script>
-  <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
-  <script src="assets/js/document/main.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/global-search.js"></script>
 </html>

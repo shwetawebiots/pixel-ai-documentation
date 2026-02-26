@@ -4,20 +4,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pixel AI - Installation" />
-    <meta name="keywords" content="Pixel AI, AI Documentation, NextJS, Nodejs" />
+    <meta name="description" content="Pixel AI - FAQ Management" />
     <meta name="author" content="pixelstrap" />
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
-    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
-    <title>Installation - Pixel AI documentation</title>
+    <title>FAQ Management - Pixel AI documentation</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
     <!-- Font Awesome-->
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
     <!-- Feather icon-->
@@ -31,15 +24,9 @@
   </head>
 
   <body>
-    <!-- tap on top starts-->
     <a href="javascript:void(0)" class="sidebar-overlay"></a>
-    <div class="tap-top">
-      <i data-feather="chevrons-up"></i>
-      <p>Top</p>
-    </div>
-    <!-- tap on tap ends-->
-    <div>
-      <div class="home-section">
+    <div class="tap-top"><i data-feather="chevrons-up"></i><p>Top</p></div>
+    <div class="home-section">
         <nav class="navbar navbar-expand-lg">
           <div class="container custom-container">
             <div class="main-menu">
@@ -91,10 +78,9 @@
           </div>
         </div>
       </div>
-    </div>
     <div class="container custom-container" id="mainRightNavbar">
       <div class="document-main">
-       <div class="left-sidebar">
+        <div class="left-sidebar">
           <div class="card">
             <div class="card-body">
               <aside>
@@ -190,54 +176,144 @@
             </div>
           </div>
         </div>
-        <div class="content card-hover-effect">
+        <div class="content">
           <div class="row">
             <div class="col-sm-12">
-              <button class="btn sidebar-button">Menu</button>
-              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Installation</h4>
+              <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> FAQ Management</h4>
             </div>
-            
-            <div class="col-12" id="backend">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="main-sub-title">1. Backend Installation (pixel-ai)</h5>
-                  <p>Follow these steps to set up the Node.js/Express backend:</p>
-                  <pre class="bg-light p-3"><code># Clone the project
-git clone [backend-repo-url] pixel-ai
+            <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <p class="mb-0">The FAQ Management module allows administrators to maintain a comprehensive knowledge base for users, featuring rich text editing, categorization, and bulk controls.</p>
+              </div>
+            </div>
+          </div>
 
-# Navigate to directory
-cd pixel-ai
-
-# Install dependencies
-npm install
-
-# Copy environment file
-cp .env.example .env
-
-# Start in development mode
-npm run dev</code></pre>
-                  <p><b>Important:</b> Ensure your `.env` file is updated with MongoDB URI and AI API keys.</p>
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">1. FAQs List View</h5>
+                <p>The FAQs table lists every knowledge-base entry with columns for question title, category, visibility status, created date, and quick actions. Clicking anywhere on a row opens a preview drawer showing the full answer text, tags, and linked pages so admins can verify context before updating.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-list-alt fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: FAQs List View with preview drawer showing detailed entry info]</p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-12" id="frontend">
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">2. FAQ Status & Priority Controls</h5>
+                <p>Each entry exposes a status badge (Draft, Published, Archived) and priority chip. Tapping the badge opens a confirmation modal outlining how visibility will change; adjusting priority reorders the FAQ within its category and immediately reflects in the front-end. Bulk updates are available when multiple rows are selected.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-toggle-on fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Status and Priority Toggle Controls with confirmation modal]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">3. Edit FAQ Entry</h5>
+                <p>The Edit icon routes to the FAQ form where Super Admins can modify the question, rich-text answer, category, tags, and visibility schedule. Auto-save keeps drafts safe, and publishing pushes changes live as soon as the form is submitted.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-pencil fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Edit FAQ Form with Rich Text Editor and localization options]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">4. Add FAQ</h5>
+                <p>The “Add FAQ” button launches a fresh form pre-populated with default category and status. Admins can add attachments, embed links, and define locale-specific answers before publishing or saving as draft.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-plus-circle fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Add FAQ Form with attachment upload and content blocks]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">5. Delete / Archive FAQ</h5>
+                <p>Choosing Delete triggers a guarded dialog explaining whether the FAQ will be archived (soft delete) or removed entirely. Confirmation is required, and a toast notification confirms the result. Archived entries can be restored later from the backend if needed.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-trash-o fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Delete confirmation modal explaining archival vs permanent removal]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">6. Bulk Actions & Filters</h5>
+                <p>Multi-select checkboxes make it easy to change status, category, or priority for multiple FAQs at once. Filters above the table let admins narrow by category, keyword, status, or tag, ensuring quick navigation through large knowledge bases.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-filter fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Bulk actions toolbar and advanced filtering dropdowns]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">Key Points</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Every status change, publish, or delete requires explicit confirmation and surfaces a toast notification.</li>
+                  <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Draft FAQs remain invisible until published, but can be previewed via the row drawer.</li>
+                  <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Priority chips determine the ordering on the public FAQ page and update immediately.</li>
+                  <li class="mb-2"><i class="fa fa-check text-success me-2"></i> The preview drawer provides fast QA without leaving the list view.</li>
+                  <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Bulk actions respect the selected rows and summarize changes before execution.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            </div>
+
+            <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="main-sub-title">2. Frontend Installation (pixel-ai-next)</h5>
-                  <p>Follow these steps to set up the Next.js frontend:</p>
-                  <pre class="bg-light p-3"><code># Clone the project
-git clone [frontend-repo-url] pixel-ai-next
-
-# Navigate to directory
-cd pixel-ai-next
-
-# Install dependencies
-npm install
-
-# Start in development mode
-npm run dev</code></pre>
-                  <p>The frontend will be available at <code>http://localhost:3001</code> by default.</p>
+                  <div class="steps-box"><div class="steps-title">
+                      <div><i class="fa fa-rocket"></i><h5>What's Next?</h5></div>
+                      <p>Continue exploring the Admin Module tools.</p>
+                    </div>
+                    <div class="row gy-4">
+                      <div class="col-md-4 col-sm-6">
+                        <a href="admin-pages.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/3.png" alt="" /></div>
+                          <div class="steps-items"><h5>Pages Management</h5><p>Legal & Static Content</p></div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <a href="admin-plans.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
+                          <div class="steps-items"><h5>Subscription Plans</h5><p>Pricing Models</p></div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <a href="admin-settings.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
+                          <div class="steps-items"><h5>System Settings</h5><p>Global Configuration</p></div>
+                        </a>
+                      </div>
+                    </div></div>
+                    </div></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -245,20 +321,14 @@ npm run dev</code></pre>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row footer-theme partition-f">
-          <div class="col-12">Copyright 2026 © Pixel AI by pixelstrap</div>
-        </div>
-      </div>
-    </footer>
+    <footer><div class="container"><div class="row footer-theme partition-f"><div class="col-12">Copyright 2026 © Pixel AI</div></div></div></footer>
     <div class="bg-overlay"></div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="assets/js/document/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/global-search.js"></script>
   </body>
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/icons/feather-icon/feather.min.js"></script>
-  <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
-  <script src="assets/js/document/main.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/global-search.js"></script>
 </html>

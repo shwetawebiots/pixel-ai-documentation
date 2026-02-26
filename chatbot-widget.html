@@ -4,20 +4,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pixel AI - Installation" />
-    <meta name="keywords" content="Pixel AI, AI Documentation, NextJS, Nodejs" />
+    <meta name="description" content="Pixel AI - Chatbot Widget" />
     <meta name="author" content="pixelstrap" />
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
-    <title>Installation - Pixel AI documentation</title>
+    <title>Chatbot Widget - Pixel AI documentation</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
     <!-- Font Awesome-->
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
     <!-- Feather icon-->
@@ -31,15 +26,10 @@
   </head>
 
   <body>
-    <!-- tap on top starts-->
     <a href="javascript:void(0)" class="sidebar-overlay"></a>
-    <div class="tap-top">
-      <i data-feather="chevrons-up"></i>
-      <p>Top</p>
-    </div>
-    <!-- tap on tap ends-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i><p>Top</p></div>
     <div>
-      <div class="home-section">
+     <div class="home-section">
         <nav class="navbar navbar-expand-lg">
           <div class="container custom-container">
             <div class="main-menu">
@@ -94,7 +84,7 @@
     </div>
     <div class="container custom-container" id="mainRightNavbar">
       <div class="document-main">
-       <div class="left-sidebar">
+        <div class="left-sidebar">
           <div class="card">
             <div class="card-body">
               <aside>
@@ -113,7 +103,7 @@
                     <div class="title">
                       <a class="nav-link" href="#!"
                         >Pixel AI Installation <i class="fa fa-angle-down" aria-hidden="true"></i
-                      ></a>
+                       ></a>
                     </div>
                     <ul class="sub-menu">
                       <li class="nav-item"><a href="overview.html" class="nav-link">Overview</a></li>
@@ -164,21 +154,7 @@
                   <li class="nav-item">
                     <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
                   </li>
-                  <li class="nav-item menu">
-                    <div class="title">
-                      <a class="nav-link" href="#!"
-                        >Admin Module <i class="fa fa-angle-down" aria-hidden="true"></i
-                       ></a>
-                    </div>
-                    <ul class="sub-menu">
-                      <li class="nav-item"><a href="admin-user-management.html" class="nav-link">User Management</a></li>
-                      <li class="nav-item"><a href="admin-role-management.html" class="nav-link">Role Management</a></li>
-                      <li class="nav-item"><a href="admin-plans.html" class="nav-link">Subscription Plans</a></li>
-                      <li class="nav-item"><a href="admin-faq.html" class="nav-link">FAQ Management</a></li>
-                      <li class="nav-item"><a href="admin-pages.html" class="nav-link">Pages Management</a></li>
-                      <li class="nav-item"><a href="admin-settings.html" class="nav-link">System Settings</a></li>
-                    </ul>
-                  </li>
+                  <li class="nav-item menu"><div class="title"><a class="nav-link" href="#!">Admin Module <i class="fa fa-angle-down" aria-hidden="true"></i></a></div><ul class="sub-menu"><li class="nav-item"><a href="admin-user-management.html" class="nav-link">User Management</a></li><li class="nav-item"><a href="admin-role-management.html" class="nav-link">Role Management</a></li><li class="nav-item"><a href="admin-plans.html" class="nav-link">Subscription Plans</a></li><li class="nav-item"><a href="admin-faq.html" class="nav-link">FAQ Management</a></li><li class="nav-item"><a href="admin-pages.html" class="nav-link">Pages Management</a></li><li class="nav-item"><a href="admin-settings.html" class="nav-link">System Settings</a></li></ul></li>
                   <li class="nav-item">
                     <div class="title"><a class="nav-link" href="technologies.html">Technologies Used</a></div>
                   </li>
@@ -193,51 +169,140 @@
         <div class="content card-hover-effect">
           <div class="row">
             <div class="col-sm-12">
-              <button class="btn sidebar-button">Menu</button>
-              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Installation</h4>
+              <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> External Chatbot Widget</h4>
             </div>
-            
-            <div class="col-12" id="backend">
+
+            <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="main-sub-title">1. Backend Installation (pixel-ai)</h5>
-                  <p>Follow these steps to set up the Node.js/Express backend:</p>
-                  <pre class="bg-light p-3"><code># Clone the project
-git clone [backend-repo-url] pixel-ai
-
-# Navigate to directory
-cd pixel-ai
-
-# Install dependencies
-npm install
-
-# Copy environment file
-cp .env.example .env
-
-# Start in development mode
-npm run dev</code></pre>
-                  <p><b>Important:</b> Ensure your `.env` file is updated with MongoDB URI and AI API keys.</p>
+                  <h5 class="main-sub-title mt-0 text-primary">Overview</h5>
+                  <p>The <b>External Chatbot Widget</b> allows you to create an AI-powered assistant and display it as a floating chat bubble on any website. Once deployed, your chatbot appears in the corner of your website and interacts with visitors in real time.</p>
+                  
+                  <h4 class="mt-4 mb-2">How It Works</h4>
+                  <ul>
+                    <li>Configure your chatbot settings.</li>
+                    <li>Customize its design to match your brand.</li>
+                    <li>Train it with your own data.</li>
+                    <li>Embed the widget script into your website.</li>
+                  </ul>
+                  <p>Once added, the chatbot appears as a floating support assistant on your site.</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-12" id="frontend">
+            <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="main-sub-title">2. Frontend Installation (pixel-ai-next)</h5>
-                  <p>Follow these steps to set up the Next.js frontend:</p>
-                  <pre class="bg-light p-3"><code># Clone the project
-git clone [frontend-repo-url] pixel-ai-next
+                  <h4 class="main-sub-title mt-0">1. Configuration</h4>
+                  <p>In this step, you define how your chatbot works. You can:</p>
+                  <ul class="mb-3">
+                    <li>Set the chatbot name and description</li>
+                    <li>Choose the AI provider and model</li>
+                    <li>Add your API key</li>
+                    <li>Set welcome message</li>
+                    <li>Adjust response behavior (temperature & max tokens)</li>
+                    <li>Select interaction type</li>
+                  </ul>
+                  <p>This section controls the chatbot’s intelligence and response behavior.</p>
+                  <div class="alert alert-light border text-center py-5 mb-0">
+                    <i class="fa fa-image fa-3x text-muted mb-2"></i>
+                    <p class="text-muted mb-0">[Screenshot: Chatbot Configuration Panel]</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-# Navigate to directory
-cd pixel-ai-next
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="main-sub-title mt-0">2. Appearance</h4>
+                  <p>This step allows you to design your chatbot’s look and feel. You can:</p>
+                  <ul class="mb-3">
+                    <li>Upload a chatbot avatar</li>
+                    <li>Choose accent colors</li>
+                    <li>Adjust corner rounding</li>
+                    <li>Customize background and bubble colors</li>
+                    <li>Modify text and button styles</li>
+                  </ul>
+                  <p>This ensures the chatbot matches your brand identity.</p>
+                  <div class="alert alert-light border text-center py-5 mb-0">
+                    <i class="fa fa-image fa-3x text-muted mb-2"></i>
+                    <p class="text-muted mb-0">[Screenshot: Chatbot Appearance Settings]</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-# Install dependencies
-npm install
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="main-sub-title mt-0">3. Training</h4>
+                  <p>In this section, you provide knowledge to your chatbot. You can train it using:</p>
+                  <ul class="mb-3">
+                    <li>Website URLs</li>
+                    <li>PDF documents</li>
+                    <li>Custom text</li>
+                    <li>Q&A pairs</li>
+                  </ul>
+                  <p>This step improves response accuracy by giving the chatbot your own content.</p>
+                  <div class="alert alert-light border text-center py-5 mb-0">
+                    <i class="fa fa-image fa-3x text-muted mb-2"></i>
+                    <p class="text-muted mb-0">[Screenshot: Chatbot Knowledge Base Training]</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-# Start in development mode
-npm run dev</code></pre>
-                  <p>The frontend will be available at <code>http://localhost:3001</code> by default.</p>
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="main-sub-title mt-0">4. Embed</h4>
+                  <p>This is the final step. Here you:</p>
+                  <ul class="mb-3">
+                    <li>Copy the generated embed code</li>
+                    <li>Paste it before the closing <code>&lt;/body&gt;</code> tag of your website</li>
+                  </ul>
+                  <p>Once added, the chatbot appears as a floating widget and is ready to interact with visitors.</p>
+                  <div class="alert alert-light border text-center py-5 mb-0">
+                    <i class="fa fa-image fa-3x text-muted mb-2"></i>
+                    <p class="text-muted mb-0">[Screenshot: Embed Code Integration]</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Navigation -->
+            <div class="col-12 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="steps-box"><div class="steps-title">
+                      <div><i class="fa fa-rocket"></i><h5>What's Next?</h5></div>
+                      <p>Let's get started — your journey with Pixel AI begins here!</p>
+                    </div>
+                    <div class="row gy-4">
+                      <div class="col-md-4 col-sm-6">
+                        <a href="chatbot-telegram.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
+                          <div class="steps-items"><h5>Telegram</h5><p>Channel Integration</p></div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <a href="chatbot-whatsapp.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/3.png" alt="" /></div>
+                          <div class="steps-items"><h5>WhatsApp</h5><p>Twilio Integration</p></div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <a href="human-agent.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/3.png" alt="" /></div>
+                          <div class="steps-items"><h5>Human Agent</h5><p>Support Handoff</p></div>
+                        </a>
+                      </div>
+                    </div></div>
+                    </div></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -245,20 +310,14 @@ npm run dev</code></pre>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row footer-theme partition-f">
-          <div class="col-12">Copyright 2026 © Pixel AI by pixelstrap</div>
-        </div>
-      </div>
-    </footer>
+    <footer><div class="container"><div class="row footer-theme partition-f"><div class="col-12">Copyright 2026 © Pixel AI</div></div></div></footer>
     <div class="bg-overlay"></div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="assets/js/document/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/global-search.js"></script>
   </body>
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/icons/feather-icon/feather.min.js"></script>
-  <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
-  <script src="assets/js/document/main.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/global-search.js"></script>
 </html>

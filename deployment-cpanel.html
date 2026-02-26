@@ -119,6 +119,7 @@
                       ></a>
                     </div>
                     <ul class="sub-menu">
+                      <li class="nav-item"><a href="deployment-vps.html" class="nav-link">Virtual Private Server</a></li>
                       <li class="nav-item"><a href="deployment-vercel.html" class="nav-link">Vercel</a></li>
                       <li class="nav-item"><a href="deployment-cpanel.html" class="nav-link">C-panel</a></li>
                     </ul>
@@ -127,11 +128,24 @@
                     <div class="title"><a class="nav-link" href="core-features.html">Core Features</a></div>
                   </li>
                   <li class="nav-item">
-                    <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
+                    <div class="title"><a class="nav-link" href="human-agent.html">Human Agent for External Chatbot</a></div>
+                  </li>
+                  <li class="nav-item menu">
+                    <div class="title">
+                      <a class="nav-link" href="#!"
+                        >AI Chatbot <i class="fa fa-angle-down" aria-hidden="true"></i
+                       ></a>
+                    </div>
+                    <ul class="sub-menu">
+                      <li class="nav-item"><a href="chatbot-widget.html" class="nav-link">Chatbot Widget</a></li>
+                      <li class="nav-item"><a href="chatbot-telegram.html" class="nav-link">Telegram Integration</a></li>
+                      <li class="nav-item"><a href="chatbot-whatsapp.html" class="nav-link">WhatsApp Integration</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
-                    <div class="title"><a class="nav-link" href="admin-module.html">Admin Module</a></div>
+                    <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
                   </li>
+                  <li class="nav-item menu"><div class="title"><a class="nav-link" href="#!">Admin Module <i class="fa fa-angle-down" aria-hidden="true"></i></a></div><ul class="sub-menu"><li class="nav-item"><a href="admin-user-management.html" class="nav-link">User Management</a></li><li class="nav-item"><a href="admin-role-management.html" class="nav-link">Role Management</a></li><li class="nav-item"><a href="admin-plans.html" class="nav-link">Subscription Plans</a></li><li class="nav-item"><a href="admin-faq.html" class="nav-link">FAQ Management</a></li><li class="nav-item"><a href="admin-pages.html" class="nav-link">Pages Management</a></li><li class="nav-item"><a href="admin-settings.html" class="nav-link">System Settings</a></li></ul></li>
                   <li class="nav-item">
                     <div class="title"><a class="nav-link" href="technologies.html">Technologies Used</a></div>
                   </li>
@@ -161,7 +175,7 @@
                   <div class="mb-5">
                     <div class="d-flex align-items-center mb-3">
                       <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">1</div>
-                      <h3 class="main-sub-title mb-0 mt-0">Prepare Node.js App</h3>
+                      <h5 class="main-sub-title mb-0 mt-0">Prepare Node.js App</h5>
                     </div>
                     <p class="text-muted small mb-3">Login to your CPanel dashboard, navigate to the <b>Software</b> section, and select <b>Setup Node.js App</b>. Click <b>Create Application</b>.</p>
                   </div>
@@ -170,7 +184,7 @@
                   <div class="mb-5">
                     <div class="d-flex align-items-center mb-3">
                       <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">2</div>
-                      <h3 class="main-sub-title mb-0 mt-0">Application Settings</h3>
+                      <h5 class="main-sub-title mb-0 mt-0">Application Settings</h5>
                     </div>
                     <ul class="list-unstyled small text-muted">
                       <li class="mb-2"><b>Node.js Version:</b> Select 18.x or the latest LTS.</li>
@@ -184,7 +198,7 @@
                   <div class="mb-5">
                     <div class="d-flex align-items-center mb-3">
                       <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">3</div>
-                      <h3 class="main-sub-title mb-0 mt-0">Deployment & Install</h3>
+                      <h5 class="main-sub-title mb-0 mt-0">Deployment & Install</h5>
                     </div>
                     <p class="text-muted small mb-3">Upload your <code>pixel-ai</code> backend files (excluding <code>node_modules</code>) via File Manager. Once uploaded, return to the Node.js interface and click <b>Run NPM Install</b>.</p>
                   </div>
@@ -193,7 +207,7 @@
                   <div>
                     <div class="d-flex align-items-center mb-3">
                       <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 32px; height: 32px; font-weight: bold;">4</div>
-                      <h3 class="main-sub-title mb-0 mt-0">Environment Variables</h3>
+                      <h5 class="main-sub-title mb-0 mt-0">Environment Variables</h5>
                     </div>
                     <p class="text-muted small mb-3">In the Node.js App interface, scroll down to <b>Environment Variables</b> and manually add all keys from your <code>.env</code> file (e.g., MONGODB_URI, GEMINI_API_KEY, etc.).</p>
                   </div>
@@ -204,30 +218,31 @@
             <div class="col-12 mt-4">
               <div class="card">
                 <div class="card-body">
-                  <div class="steps-box">
-                    <div class="steps-title">
-                      <div><i class="fa fa-rocket"></i><h2>What's Next?</h2></div>
-                      <p>Installation complete! Ready to explore?</p>
+                  <div class="steps-box"><div class="steps-title">
+                      <div><i class="fa fa-rocket"></i><h5>What's Next?</h5></div>
+                      <p>Let's get started — your journey with Pixel AI begins here!</p>
                     </div>
                     <div class="row gy-4">
                       <div class="col-md-4 col-sm-6">
-                        <a href="core-features.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
-                          <div class="steps-items"><h3>Core Features</h3><p>AI Chat & Content</p></div>
-                        </a>
-                      </div>
-                      <div class="col-md-4 col-sm-6">
-                        <a href="advanced-features.html" class="steps-content">
+                        <a href="deployment-vps.html" class="steps-content">
                           <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
-                          <div class="steps-items"><h3>Advanced Tools</h3><p>Subscriptions & OAuth</p></div>
+                          <div class="steps-items"><h5>VPS Deployment</h5><p>Server Hosting</p></div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
-                        <a href="admin-module.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/6.png" alt="" /></div>
-                          <div class="steps-items"><h3>Admin Dashboard</h3><p>Manage users & plans</p></div>
+                        <a href="deployment-vercel.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/3.png" alt="" /></div>
+                          <div class="steps-items"><h5>Vercel Deployment</h5><p>Cloud Hosting</p></div>
                         </a>
                       </div>
+                      <div class="col-md-4 col-sm-6">
+                        <a href="core-features.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
+                          <div class="steps-items"><h5>Core Features</h5><p>Platform Essentials</p></div>
+                        </a>
+                      </div>
+                    </div></div>
+                    </div></div>
                     </div>
                   </div>
                 </div>

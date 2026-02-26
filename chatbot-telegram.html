@@ -4,12 +4,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pixel AI - Admin Module" />
+    <meta name="description" content="Pixel AI - Telegram Integration" />
     <meta name="author" content="pixelstrap" />
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
-    <title>Admin Module - Pixel AI documentation</title>
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <title>Telegram Integration - Pixel AI documentation</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
     <!-- Font Awesome-->
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
@@ -26,7 +28,8 @@
   <body>
     <a href="javascript:void(0)" class="sidebar-overlay"></a>
     <div class="tap-top"><i data-feather="chevrons-up"></i><p>Top</p></div>
-    <div class="home-section">
+    <div>
+     <div class="home-section">
         <nav class="navbar navbar-expand-lg">
           <div class="container custom-container">
             <div class="main-menu">
@@ -78,9 +81,10 @@
           </div>
         </div>
       </div>
+    </div>
     <div class="container custom-container" id="mainRightNavbar">
       <div class="document-main">
-      <div class="left-sidebar">
+        <div class="left-sidebar">
           <div class="card">
             <div class="card-body">
               <aside>
@@ -99,7 +103,7 @@
                     <div class="title">
                       <a class="nav-link" href="#!"
                         >Pixel AI Installation <i class="fa fa-angle-down" aria-hidden="true"></i
-                      ></a>
+                       ></a>
                     </div>
                     <ul class="sub-menu">
                       <li class="nav-item"><a href="overview.html" class="nav-link">Overview</a></li>
@@ -124,6 +128,7 @@
                       ></a>
                     </div>
                     <ul class="sub-menu">
+                      <li class="nav-item"><a href="deployment-vps.html" class="nav-link">Virtual Private Server</a></li>
                       <li class="nav-item"><a href="deployment-vercel.html" class="nav-link">Vercel</a></li>
                       <li class="nav-item"><a href="deployment-cpanel.html" class="nav-link">C-panel</a></li>
                     </ul>
@@ -132,11 +137,24 @@
                     <div class="title"><a class="nav-link" href="core-features.html">Core Features</a></div>
                   </li>
                   <li class="nav-item">
-                    <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
+                    <div class="title"><a class="nav-link" href="human-agent.html">Human Agent for External Chatbot</a></div>
+                  </li>
+                  <li class="nav-item menu">
+                    <div class="title">
+                      <a class="nav-link" href="#!"
+                        >AI Chatbot <i class="fa fa-angle-down" aria-hidden="true"></i
+                       ></a>
+                    </div>
+                    <ul class="sub-menu">
+                      <li class="nav-item"><a href="chatbot-widget.html" class="nav-link">Chatbot Widget</a></li>
+                      <li class="nav-item"><a href="chatbot-telegram.html" class="nav-link">Telegram Integration</a></li>
+                      <li class="nav-item"><a href="chatbot-whatsapp.html" class="nav-link">WhatsApp Integration</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
-                    <div class="title"><a class="nav-link" href="admin-module.html">Admin Module</a></div>
+                    <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
                   </li>
+                  <li class="nav-item menu"><div class="title"><a class="nav-link" href="#!">Admin Module <i class="fa fa-angle-down" aria-hidden="true"></i></a></div><ul class="sub-menu"><li class="nav-item"><a href="admin-user-management.html" class="nav-link">User Management</a></li><li class="nav-item"><a href="admin-role-management.html" class="nav-link">Role Management</a></li><li class="nav-item"><a href="admin-plans.html" class="nav-link">Subscription Plans</a></li><li class="nav-item"><a href="admin-faq.html" class="nav-link">FAQ Management</a></li><li class="nav-item"><a href="admin-pages.html" class="nav-link">Pages Management</a></li><li class="nav-item"><a href="admin-settings.html" class="nav-link">System Settings</a></li></ul></li>
                   <li class="nav-item">
                     <div class="title"><a class="nav-link" href="technologies.html">Technologies Used</a></div>
                   </li>
@@ -148,55 +166,55 @@
             </div>
           </div>
         </div>
-        <div class="content">
+        <div class="content card-hover-effect">
           <div class="row">
             <div class="col-sm-12">
               <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
-              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Command Center</h4>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Telegram Channel Integration</h4>
             </div>
+
             <div class="col-12">
-              <p class="mb-4">The Pixel AI Admin Dashboard is the central hub for managing the entire platform. It provides high-level control over users, financial tiering, and system-wide API integrations.</p>
-              
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <div class="card h-100">
-                    <div class="card-body">
-                      <h5>User & Role Management</h5>
-                      <p>Full control over the user lifecycle. Create, block, or delete users and assign specialized roles with granular permissions.</p>
-                      <ul>
-                        <li><b>RBAC:</b> Define custom roles (Admin, Moderator, Editor).</li>
-                        <li><b>Activity Logs:</b> Monitor login and AI usage history.</li>
-                      </ul>
-                    </div>
-                  </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0 text-primary">Overview</h5>
+                  <p>The <b>Telegram Integration</b> feature allows you to connect your Pixel-AI chatbot directly to Telegram. Once connected, users can interact with your AI assistant inside the Telegram app just like a normal chat.</p>
+                  <p>This integration also works with the Human Support module, enabling smooth escalation from AI to a Human agent when needed.</p>
+                  
+                  <h4 class="mt-4 mb-2">What This Integration Enables</h4>
+                  <ul>
+                    <li>Users can message your AI bot through Telegram.</li>
+                    <li>Conversations are processed through Pixel-AI.</li>
+                    <li>Optional human takeover for live support.</li>
+                    <li>Centralized conversation management inside your Human Agent dashboard.</li>
+                  </ul>
                 </div>
-                <div class="col-md-6">
-                  <div class="card h-100">
-                    <div class="card-body">
-                      <h5>Subscription & Plans</h5>
-                      <p>Manage the platform's revenue streams. Define what each tier can access.</p>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="col-sm-12"><h4 class="main-title mb-4">Setup Instructions</h4></div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="mt-4 mb-2">Step 1: Generate a Telegram Bot Token</h4>
+                  <p>To begin, you’ll need to create a Telegram bot and obtain its API token.</p>
+                  <ol>
+                    <li>Open Telegram (mobile or desktop).</li>
+                    <li>Search for <b>BotFather</b> (Telegram’s official bot creation service).</li>
+                    <li>Start a conversation with BotFather.</li>
+                    <li>Send the command: <code>/newbot</code></li>
+                    <li>Provide:
                       <ul>
-                        <li><b>Token Budget:</b> Set weekly/monthly AI word limits per plan.</li>
-                        <li><b>Feature Gating:</b> Enable/Disable specific tools based on user tier.</li>
+                        <li>A display name for your bot</li>
+                        <li>A unique username (must end in "bot")</li>
                       </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5>System Settings</h5>
-                      <p>Configure the core engine without touching the source code.</p>
-                      <table class="table table-striped mt-3">
-                        <thead><tr><th>Module</th><th>Key Configurations</th></tr></thead>
-                        <tbody>
-                          <tr><td><b>API Integration</b></td><td>OpenAI, Google Gemini, Anthropic Keys</td></tr>
-                          <tr><td><b>Payment Links</b></td><td>Stripe Webhooks, PayPal IDs</td></tr>
-                          <tr><td><b>Social Auth</b></td><td>Firebase/Google/Facebook Client Secrets</td></tr>
-                          <tr><td><b>Appearance</b></td><td>Custom Logo, Favicon, and Theme Colors</td></tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    </li>
+                  </ol>
+                  <p>After completion, Telegram will provide you with a <b>Bot Token</b>.</p>
+                  <div class="alert alert-warning small">
+                    <i class="fa fa-warning me-2"></i>
+                    Store this token securely. It acts as your bot’s authentication key.
                   </div>
                 </div>
               </div>
@@ -205,33 +223,83 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <div class="steps-box">
-                    <div class="steps-title">
-                      <div><i class="fa fa-rocket"></i><h2>What's Next?</h2></div>
-                      <p>Curious about the tech stack?</p>
+                  <h4 class="mt-4 mb-2">Step 2: Connect Telegram to Pixel-AI</h4>
+                  <p>Once you have your token:</p>
+                  <ol>
+                    <li>Log in to your <b>Pixel-AI Admin Panel</b>.</li>
+                    <li>Open the <b>Chatbots</b> section.</li>
+                    <li>Select an existing bot or create a new one.</li>
+                    <li>Go to the <b>Channels</b> configuration step.</li>
+                    <li>Choose <b>Telegram</b>.</li>
+                    <li>Enter:
+                      <ul>
+                        <li>Your Bot Username</li>
+                        <li>The Bot Token provided by BotFather</li>
+                      </ul>
+                    </li>
+                    <li>Click <b>Save Changes</b>.</li>
+                  </ol>
+                  <p>Your Telegram bot is now connected to Pixel-AI.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="mt-4 mb-2">Step 3: Test the Connection</h4>
+                  <ol>
+                    <li>Open Telegram.</li>
+                    <li>Search for your newly created bot.</li>
+                    <li>Start a conversation.</li>
+                    <li>Send a message.</li>
+                  </ol>
+                  <p>If configured correctly, your AI assistant will respond instantly.</p>
+                  <p><b>If the Human Support feature is activated in Pixel-AI:</b></p>
+                  <ul>
+                    <li>Telegram users can request live assistance.</li>
+                    <li>The conversation is routed to your Human Support dashboard.</li>
+                    <li>A team member can join and reply in real time.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+
+                        <!-- What's Next Section -->
+            <div class="col-12 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="steps-box"><div class="steps-title">
+                      <div><i class="fa fa-rocket"></i><h5>What's Next?</h5></div>
+                      <p>Let's get started — your journey with Pixel AI begins here!</p>
                     </div>
                     <div class="row gy-4">
                       <div class="col-md-4 col-sm-6">
-                        <a href="technologies.html" class="steps-content">
+                        <a href="chatbot-widget.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
+                          <div class="steps-items"><h5>Chatbot Widget</h5><p>Website Integration</p></div>
+                        </a>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <a href="chatbot-whatsapp.html" class="steps-content">
                           <div class="icon"><img src="assets/images/icon/3.png" alt="" /></div>
-                          <div class="steps-items"><h3>Technologies</h3><p>Detailed stack breakdown</p></div>
+                          <div class="steps-items"><h5>WhatsApp</h5><p>Twilio Integration</p></div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
-                        <a href="changelog.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/12.png" alt="" /></div>
-                          <div class="steps-items"><h3>Change Log</h3><p>Version history & updates</p></div>
+                        <a href="advanced-features.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
+                          <div class="steps-items"><h5>Advanced Features</h5><p>Platform Extras</p></div>
                         </a>
                       </div>
-                      <div class="col-md-4 col-sm-6">
-                        <a href="index.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/1.png" alt="" /></div>
-                          <div class="steps-items"><h3>Introduction</h3><p>Back to start</p></div>
-                        </a>
-                      </div>
+                    </div></div>
+                    </div></div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
               </div>
             </div>
           </div>

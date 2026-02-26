@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pixel AI - User Management" />
+  <meta name="author" content="pixelstrap" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+  <title>User Management - Pixel AI documentation</title>
+  <!-- Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+  <!-- Font Awesome-->
+  <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
+  <!-- Feather icon-->
+  <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css" />
+  <!-- Bootstrap css-->
+  <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css" />
+  <!-- App css-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <!-- Global Search css-->
+  <link rel="stylesheet" type="text/css" href="assets/css/global-search.css" />
+</head>
+
+<body>
+  <a href="javascript:void(0)" class="sidebar-overlay"></a>
+  <div class="tap-top"><i data-feather="chevrons-up"></i>
+    <p>Top</p>
+  </div>
+  <div class="home-section">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container custom-container">
+        <div class="main-menu">
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa fa-bars"> </i>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h2 style="color: white; margin: 0;">Pixel AI</h2>
+          </a>
+          <div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav menu">
+                <li class="nav-item active"><a class="nav-link" href="#" target="_blank">Purchase</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" target="_blank">Support</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" target="_blank">Frontend</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" target="_blank">Admin</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="nav-right">
+            <li>
+              <div class="btn-group">
+                <a class="decrease btn btn-doc" href="#" title="Decrease font size">A-</a><a class="reset btn btn-doc"
+                  href="#" title="Default font size">A</a><a class="increase btn btn-doc" href="#"
+                  title="Increase font size">A+</a>
+              </div>
+            </li>
+            <li>
+              <a class="btn btn-light mode" href="#" title="Dark"><i class="fa fa-moon-o"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container custom-container">
+      <div class="document">Pixel AI documentation</div>
+      <div class="top-heading">
+        <h2>Generate high-quality content, images, and code effortlessly with Pixel AI</h2>
+        <div class="home-search">
+          <input type="search" name="text" placeholder="Search..." />
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container custom-container" id="mainRightNavbar">
+    <div class="document-main">
+      <div class="left-sidebar">
+        <div class="card">
+          <div class="card-body">
+            <aside>
+              <button class="btn button-close">
+                <span>Close</span>
+                <i data-feather="x"></i>
+              </button>
+              <ul class="list-unstyled nav-sidebar doc-nav">
+                <li class="nav-item">
+                  <div class="title"><a class="nav-link" href="index.html">Introduction</a></div>
+                </li>
+                <li class="nav-item">
+                  <div class="title"><a class="nav-link" href="prerequisite.html">Prerequisite</a></div>
+                </li>
+                <li class="nav-item menu">
+                  <div class="title">
+                    <a class="nav-link" href="#!">Pixel AI Installation <i class="fa fa-angle-down"
+                        aria-hidden="true"></i></a>
+                  </div>
+                  <ul class="sub-menu">
+                    <li class="nav-item"><a href="overview.html" class="nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="frontend-installation.html" class="nav-link">Frontend Installation</a>
+                    </li>
+                    <li class="nav-item menu">
+                      <div class="title">
+                        <a class="nav-link" href="#!">Backend Installation <i class="fa fa-angle-down"
+                            aria-hidden="true"></i></a>
+                      </div>
+                      <ul class="sub-menu nested-sub-menu">
+                        <li class="nav-item"><a href="backend-local-server.html" class="nav-link">Local Server</a></li>
+                        <li class="nav-item"><a href="backend-live-server.html" class="nav-link">Live Server</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item menu">
+                  <div class="title">
+                    <a class="nav-link" href="#!">Deployment <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  </div>
+                  <ul class="sub-menu">
+                    <li class="nav-item"><a href="deployment-vps.html" class="nav-link">Virtual Private Server</a></li>
+                    <li class="nav-item"><a href="deployment-vercel.html" class="nav-link">Vercel</a></li>
+                    <li class="nav-item"><a href="deployment-cpanel.html" class="nav-link">C-panel</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <div class="title"><a class="nav-link" href="core-features.html">Core Features</a></div>
+                </li>
+                <li class="nav-item">
+                  <div class="title"><a class="nav-link" href="human-agent.html">Human Agent for External Chatbot</a>
+                  </div>
+                </li>
+                <li class="nav-item menu">
+                  <div class="title">
+                    <a class="nav-link" href="#!">AI Chatbot <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  </div>
+                  <ul class="sub-menu">
+                    <li class="nav-item"><a href="chatbot-widget.html" class="nav-link">Chatbot Widget</a></li>
+                    <li class="nav-item"><a href="chatbot-telegram.html" class="nav-link">Telegram Integration</a></li>
+                    <li class="nav-item"><a href="chatbot-whatsapp.html" class="nav-link">WhatsApp Integration</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
+                </li>
+                <li class="nav-item menu">
+                  <div class="title">
+                    <a class="nav-link" href="#!">Admin Module <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  </div>
+                  <ul class="sub-menu">
+                    <li class="nav-item"><a href="admin-user-management.html" class="nav-link">User Management</a></li>
+                    <li class="nav-item"><a href="admin-role-management.html" class="nav-link">Role Management</a></li>
+                    <li class="nav-item"><a href="admin-plans.html" class="nav-link">Subscription Plans</a></li>
+                    <li class="nav-item"><a href="admin-faq.html" class="nav-link">FAQ Management</a></li>
+                    <li class="nav-item"><a href="admin-pages.html" class="nav-link">Pages Management</a></li>
+                    <li class="nav-item"><a href="admin-settings.html" class="nav-link">System Settings</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <div class="title"><a class="nav-link" href="technologies.html">Technologies Used</a></div>
+                </li>
+                <li class="nav-item">
+                  <div class="title"><a class="nav-link" href="changelog.html">Change Log</a></div>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-sm-12">
+            <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
+            <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> User Management</h4>
+          </div>
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <p class="mb-0">The User Management module empowers administrators to create, update, monitor, and secure user accounts. Features include manual user creation, profile editing, status toggling (active/inactive), and bulk operations for efficient administration.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">1. Users List View</h5>
+                <p>The main dashboard displays all registered users in a searchable, filterable table. Columns include avatar, full name, email, role, status (Active/Inactive), registration date, last login, AI credits usage summary, and action buttons. Selecting rows enables bulk actions; clicking a row may open a quick-view sidebar with detailed stats and recent activity.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-users fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Main User Management Dashboard showing user table and activity overview]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">2. Add New User</h5>
+                <p>Clicking the “Add User” button opens a modal form. Super Admins can enter full name, email, password (or send invitation link), assign role, set initial subscription plan/credits, and define custom fields if configured. After submission, the user receives a welcome email (if enabled) and appears immediately in the list as Active.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-user-plus fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Add New User Modal with field validation and role selection]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">3. Edit User Details</h5>
+                <p>The Edit button opens a detailed form allowing updates to personal info (name, email, avatar), role assignment, status, subscription plan, credit balance, custom metadata, and security notes. Changes are saved instantly with audit logging. Role changes take effect immediately for permissions.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-pencil-square-o fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Detailed User Profile Edit Screen with credit management]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">4. Activate / Deactivate User</h5>
+                <p>Admins can quickly toggle a user's status using an inline switch or dedicated button. Deactivating (blocking) prevents login and API access while preserving data. A confirmation modal appears explaining the impact (e.g., “User will be logged out immediately and unable to access services”). Status updates trigger email notifications if configured.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-toggle-on fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Confirmation Modal for deactivating a user session]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">5. Bulk Delete Users</h5>
+                <p>Select multiple users via checkboxes, then choose “Bulk Delete” from the actions dropdown or toolbar. A guarded confirmation modal warns about permanent data loss (profiles, usage history, generated content — depending on system settings) and may require typing a confirmation phrase. Successful deletion shows a toast notification and refreshes the list.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-trash fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Bulk Delete Confirmation Modal with safety warning]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">6. Filters, Search & Bulk Toolbar</h5>
+                <p>Use the top search bar for quick keyword lookup (name, email, role). Advanced filters allow narrowing by status, role, registration date, last activity, or credit usage. When rows are selected, a bulk toolbar appears offering actions like Activate, Deactivate, Change Role, Reset Credits, or Delete.</p>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-filter fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Advanced search and filtering interface with active chips]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">Key Points</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="fa fa-check text-success me-2"></i> All destructive actions (status change, delete) require explicit confirmation modals to prevent mistakes.</li>
+                  <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Inactive users retain their data but cannot log in or consume credits.</li>
+                  <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Role changes update permissions instantly across the platform.</li>
+                  <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Bulk operations include summary previews before execution (e.g., “Delete 12 users permanently?”).</li>
+                  <li class="mb-2"><i class="fa fa-check text-success me-2"></i> Every admin action is logged for audit purposes (visible in system logs if enabled).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="steps-box">
+                  <div class="steps-title">
+                    <div><i class="fa fa-rocket"></i><h5>What's Next?</h5></div>
+                    <p>Continue exploring the Admin Module tools.</p>
+                  </div>
+                  <div class="row gy-4">
+                    <div class="col-md-4 col-sm-6">
+                      <a href="admin-role-management.html" class="steps-content">
+                        <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
+                        <div class="steps-items"><h5>Role Management</h5><p>Assign Permissions</p></div>
+                      </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <a href="admin-plans.html" class="steps-content">
+                        <div class="icon"><img src="assets/images/icon/3.png" alt="" /></div>
+                        <div class="steps-items"><h5>Subscription Plans</h5><p>Pricing Models</p></div>
+                      </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <a href="admin-faq.html" class="steps-content">
+                        <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
+                        <div class="steps-items"><h5>FAQ Management</h5><p>Knowledge Base</p></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row footer-theme partition-f">
+        <div class="col-12">Copyright 2026 © Pixel AI</div>
+      </div>
+    </div>
+  </footer>
+  <div class="bg-overlay"></div>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+  <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+  <script src="assets/js/document/main.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/global-search.js"></script>
+</body>
+
+</html>

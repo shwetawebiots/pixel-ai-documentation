@@ -4755,7 +4755,7 @@ p.data-attributes svg {
 }
 
 body {
-  line-height: 1.4;
+  line-height: 1.6;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -4776,31 +4776,33 @@ h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 28px;
   margin-bottom: 0px;
 }
 
 h3 {
-  font-size: calc(18px + 2 * (100vw - 320px) / 1600);
+  font-size: 24px;
 }
 
-h4 {
-  font-size: 16px;
+h4, .main-title {
+  font-size: 22px !important;
+  font-weight: 600;
 }
 
-h5 {
-  font-size: 14px;
+h5, .main-sub-title {
+  font-size: 18px !important;
   font-weight: 600;
   color: #2c323f;
   margin-bottom: 15px;
 }
 
-h6 {
-  font-size: 12px;
+h6, .step-title {
+  font-size: 16px !important;
+  font-weight: 600;
 }
 
 ul {
@@ -9508,6 +9510,7 @@ body.dark-only .doc-nav .nav-item.active .sub-menu .nav-item .title .nav-link {
 
 .bg-light {
   background-color: var(--background) !important;
+  color: black !important;
 }
 
 .text-muted {

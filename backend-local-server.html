@@ -128,6 +128,7 @@
                       ></a>
                     </div>
                     <ul class="sub-menu">
+                      <li class="nav-item"><a href="deployment-vps.html" class="nav-link">Virtual Private Server</a></li>
                       <li class="nav-item"><a href="deployment-vercel.html" class="nav-link">Vercel</a></li>
                       <li class="nav-item"><a href="deployment-cpanel.html" class="nav-link">C-panel</a></li>
                     </ul>
@@ -136,11 +137,24 @@
                     <div class="title"><a class="nav-link" href="core-features.html">Core Features</a></div>
                   </li>
                   <li class="nav-item">
-                    <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
+                    <div class="title"><a class="nav-link" href="human-agent.html">Human Agent for External Chatbot</a></div>
+                  </li>
+                  <li class="nav-item menu">
+                    <div class="title">
+                      <a class="nav-link" href="#!"
+                        >AI Chatbot <i class="fa fa-angle-down" aria-hidden="true"></i
+                       ></a>
+                    </div>
+                    <ul class="sub-menu">
+                      <li class="nav-item"><a href="chatbot-widget.html" class="nav-link">Chatbot Widget</a></li>
+                      <li class="nav-item"><a href="chatbot-telegram.html" class="nav-link">Telegram Integration</a></li>
+                      <li class="nav-item"><a href="chatbot-whatsapp.html" class="nav-link">WhatsApp Integration</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
-                    <div class="title"><a class="nav-link" href="admin-module.html">Admin Module</a></div>
+                    <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
                   </li>
+                  <li class="nav-item menu"><div class="title"><a class="nav-link" href="#!">Admin Module <i class="fa fa-angle-down" aria-hidden="true"></i></a></div><ul class="sub-menu"><li class="nav-item"><a href="admin-user-management.html" class="nav-link">User Management</a></li><li class="nav-item"><a href="admin-role-management.html" class="nav-link">Role Management</a></li><li class="nav-item"><a href="admin-plans.html" class="nav-link">Subscription Plans</a></li><li class="nav-item"><a href="admin-faq.html" class="nav-link">FAQ Management</a></li><li class="nav-item"><a href="admin-pages.html" class="nav-link">Pages Management</a></li><li class="nav-item"><a href="admin-settings.html" class="nav-link">System Settings</a></li></ul></li>
                   <li class="nav-item">
                     <div class="title"><a class="nav-link" href="technologies.html">Technologies Used</a></div>
                   </li>
@@ -160,96 +174,171 @@
             </div>
             
             <div class="col-12">
-              <p class="mb-4 text-muted">The Pixel AI Backend is a high-performance <b>Node.js</b> engine built with <b>Express</b>. It orchestrates AI model workflows, manages <b>MongoDB</b> persistence, and handles background tasks via <b>BullMQ</b>.</p>
+              <p class="mb-4 text-muted">These are the steps required to set up <b>Pixel AI</b> application manually on any environment (Local System or Live Server).</p>
+              
+              <div class="d-flex justify-content-center mb-4">
+                <div class="btn-group" role="group" aria-label="OS Toggle">
+                  <button type="button" class="btn btn-info active os-toggle px-4" data-os="windows"><i class="fa fa-windows me-1"></i> Windows</button>
+                  <button type="button" class="btn btn-outline-info os-toggle px-4" data-os="macos"><i class="fa fa-apple me-1"></i> macOS</button>
+                </div>
+              </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 os-content" id="windows-content">
               <div class="card">
                 <div class="card-body">
-                  <!-- Step 1 -->
+                  <!-- Getting Started -->
                   <div class="mb-5">
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 36px; height: 36px; font-weight: 700;">01</div>
-                      <h3 class="main-sub-title mb-0 mt-0">Initial Setup & Dependencies</h3>
-                    </div>
-                    <p class="text-muted small mb-3">Begin by navigating to the core backend repository and installing all necessary server-side packages.</p>
-                    <div class="code-block p-4 bg-light rounded border shadow-sm">
-                      <pre class="mb-0"><code><span class="text-info"># Navigate to backend</span>
-cd pixel-ai
+                    <h5 class="main-sub-title mt-0">Getting Started</h5>
+                    <p class="text-muted mb-3">Follow these steps to set up the environment on Windows.</p>
+                    <ul class="mb-0">
+                      <li>MongoDB Installation</li>
+                      <li>Node.js Installation</li>
+                    </ul>
+                  </div>
 
-<span class="text-info"># Install packages</span>
-npm install</code></pre>
+                  <!-- MongoDB Setup -->
+                  <div class="mb-5">
+                    <h5 class="main-sub-title">MongoDB Setup</h5>
+                    <p class="mb-3"><b>1. Download & Install MongoDB Community Server</b></p>
+                    <p class="text-muted small">Go to: <a href="https://www.mongodb.com/try/download/community" target="_blank">MongoDB Community Download</a></p>
+                    <ul class="text-muted small">
+                      <li>Version: Latest stable (e.g. 7.x or 8.x)</li>
+                      <li>Platform: Windows</li>
+                      <li>Package: MSI</li>
+                    </ul>
+                    <p class="text-muted small">During installation choose:</p>
+                    <ul class="text-muted small">
+                      <li>Complete setup (recommended)</li>
+                      <li>Check <b>Install MongoDB as a Service</b></li>
+                      <li>Check <b>Install MongoDB Compass</b> (GUI)</li>
+                    </ul>
+
+                    <p class="mt-4 mb-2"><b>2. Add MongoDB to PATH</b></p>
+                    <div class="code-block p-3 bg-light rounded border mb-3">
+                      <pre class="mb-0"><code>C:\Program Files\MongoDB\Server\&lt;version&gt;\bin</code></pre>
+                    </div>
+
+                    <p class="mt-4 mb-2"><b>3. Verify Installation</b></p>
+                    <div class="code-block p-3 bg-light rounded border">
+                      <pre class="mb-0"><code>mongod --version
+mongosh --version</code></pre>
+                    </div>
+
+                    <p class="mt-4 mb-2"><b>4. Create Database & User</b></p>
+                    <div class="code-block p-3 bg-light rounded border">
+                      <pre class="mb-0"><code><span class="text-info"># Open mongosh</span>
+mongosh
+
+<span class="text-info">// Switch to admin</span>
+use admin
+
+<span class="text-info">// Create admin user</span>
+db.createUser({
+  user: "admin",
+  pwd: "StrongAdminPass123!",
+  roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+})
+
+<span class="text-info">// Create application database and user</span>
+use pixelai
+db.createUser({
+  user: "pixelai_user",
+  pwd: "Your_strong_password",
+  roles: [ { role: "readWrite", db: "pixelai" } ]
+})</code></pre>
                     </div>
                   </div>
 
-                  <!-- Step 2 -->
-                  <div class="mb-5">
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 36px; height: 36px; font-weight: 700;">02</div>
-                      <h3 class="main-sub-title mb-0 mt-0">System Configuration (.env)</h3>
-                    </div>
-                    <p class="text-muted small mb-3">Create a <code>.env</code> file in the <code>pixel-ai</code> root directory and configure the following core variables:</p>
-                    
-                    <div class="table-responsive shadow-sm rounded mb-4">
-                      <table class="table table-borderless align-middle custom-table mb-0 border">
-                        <thead class="bg-light">
-                          <tr>
-                            <th class="ps-4">Key</th>
-                            <th>Purpose</th>
-                            <th class="pe-4">Default Value</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="border-bottom">
-                            <td class="ps-4"><code>PORT</code></td>
-                            <td class="small text-muted">The port the API will listen on.</td>
-                            <td class="pe-4"><code>3000</code></td>
-                          </tr>
-                          <tr class="border-bottom">
-                            <td class="ps-4"><code>MONGODB_URI</code></td>
-                            <td class="small text-muted">Local or Atlas MongoDB string.</td>
-                            <td class="pe-4"><code class="small">mongodb://localhost:27017/pixel-ai</code></td>
-                          </tr>
-                          <tr class="border-bottom">
-                            <td class="ps-4"><code>REDIS_URL</code></td>
-                            <td class="small text-muted">Required for background AI tasks.</td>
-                            <td class="pe-4"><code>redis://localhost:6379</code></td>
-                          </tr>
-                          <tr class="border-bottom">
-                            <td class="ps-4"><code>GEMINI_API_KEY</code></td>
-                            <td class="small text-muted">Your Google AI Studio key.</td>
-                            <td class="pe-4"><a href="https://aistudio.google.com/" target="_blank" class="small text-primary">Get Key</a></td>
-                          </tr>
-                          <tr>
-                            <td class="ps-4"><code>GROK_API_KEY</code></td>
-                            <td class="small text-muted">Your GROQ Cloud platform key.</td>
-                            <td class="pe-4"><a href="https://console.groq.com/" target="_blank" class="small text-primary">Get Key</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    
-                    <div class="alert alert-light border-start border-4 border-primary bg-light p-3">
-                      <div class="d-flex">
-                        <i class="fa fa-info-circle text-primary me-3 mt-1"></i>
-                        <p class="small mb-0"><b>Security Note:</b> Never commit your <code>.env</code> file to version control. Keep your API keys and JWT secrets private at all times.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Step 3 -->
+                  <!-- Node.js Setup -->
                   <div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 36px; height: 36px; font-weight: 700;">03</div>
-                      <h3 class="main-sub-title mb-0 mt-0">Execute Server</h3>
+                    <h5 class="main-sub-title">Node.js Setup</h5>
+                    <p class="mb-3"><b>1. Download & Install Node.js (LTS)</b></p>
+                    <p class="text-muted small">Download from <a href="https://nodejs.org/" target="_blank">nodejs.org</a> and choose the <b>LTS</b> version.</p>
+                    
+                    <p class="mt-4 mb-2"><b>2. Verify Installation</b></p>
+                    <div class="code-block p-3 bg-light rounded border mb-3">
+                      <pre class="mb-0"><code>node -v
+npm -v</code></pre>
                     </div>
-                    <p class="text-muted small mb-3">Start the server in development mode with automatic hot-reloading.</p>
-                    <div class="code-block p-4 bg-light rounded border shadow-sm mb-4">
-                      <pre class="mb-0"><code>npm run dev</code></pre>
+
+                    <p class="mt-4 mb-2"><b>3. Install PM2</b></p>
+                    <div class="code-block p-3 bg-light rounded border">
+                      <pre class="mb-0"><code>npm install pm2 -g</code></pre>
                     </div>
-                    <div class="d-flex align-items-center p-3 bg-primary-light rounded border-start border-4 border-primary">
-                      <i class="fa fa-check-circle text-primary me-3 fs-5"></i>
-                      <p class="small mb-0">The API will be active at: <a href="http://localhost:3000" target="_blank" class="text-primary fw-bold text-decoration-none">http://localhost:3000</a></p>
+
+                    <div class="alert alert-info mt-4 mb-0">
+                      <p class="small mb-0"><b>Connection String:</b> <code>mongodb://pixelai_user:YOUR_PASSWORD@localhost:27017/pixelai</code></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 os-content" id="macos-content" style="display: none;">
+              <div class="card">
+                <div class="card-body">
+                  <!-- Getting Started -->
+                  <div class="mb-5">
+                    <h5 class="main-sub-title mt-0">Getting Started</h5>
+                    <p class="text-muted mb-3">Follow these steps to set up the environment on macOS.</p>
+                    <ul class="mb-0">
+                      <li>MongoDB Installation (via Homebrew)</li>
+                      <li>Node.js Installation</li>
+                    </ul>
+                  </div>
+
+                  <!-- MongoDB Setup -->
+                  <div class="mb-5">
+                    <h5 class="main-sub-title">MongoDB Setup</h5>
+                    <p class="mb-3"><b>1. Install MongoDB using Homebrew</b></p>
+                    <div class="code-block p-3 bg-light rounded border mb-3">
+                      <pre class="mb-0"><code>brew update
+brew tap mongodb/brew
+brew install mongodb-community@8.0
+brew services start mongodb-community</code></pre>
+                    </div>
+
+                    <p class="mt-4 mb-2"><b>2. Verify Installation</b></p>
+                    <div class="code-block p-3 bg-light rounded border">
+                      <pre class="mb-0"><code>mongod --version
+mongosh --version</code></pre>
+                    </div>
+
+                    <p class="mt-4 mb-2"><b>4. Create Database & User</b></p>
+                    <div class="code-block p-3 bg-light rounded border">
+                      <pre class="mb-0"><code>mongosh
+
+use admin
+db.createUser({
+  user: "admin",
+  pwd: "StrongAdminPass123!",
+  roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+})
+
+use pixelai
+db.createUser({
+  user: "pixelai_user",
+  pwd: "Your_strong_password",
+  roles: [ { role: "readWrite", db: "pixelai" } ]
+})</code></pre>
+                    </div>
+                  </div>
+
+                  <!-- Node.js Setup -->
+                  <div>
+                    <h5 class="main-sub-title">Node.js Setup</h5>
+                    <p class="mb-3"><b>1. Download & Install Node.js (LTS)</b></p>
+                    <p class="text-muted small">Download the <b>.pkg</b> installer from <a href="https://nodejs.org/" target="_blank">nodejs.org</a>.</p>
+                    
+                    <p class="mt-4 mb-2"><b>2. Verify Installation</b></p>
+                    <div class="code-block p-3 bg-light rounded border">
+                      <pre class="mb-0"><code>node -v
+npm -v</code></pre>
+                    </div>
+
+                    <div class="alert alert-info mt-4 mb-0">
+                      <p class="small mb-0"><b>Connection String:</b> <code>mongodb://pixelai_user:Your_password@localhost:27017/pixelai</code></p>
                     </div>
                   </div>
                 </div>
@@ -260,30 +349,31 @@ npm install</code></pre>
             <div class="col-12 mt-4">
               <div class="card">
                 <div class="card-body">
-                  <div class="steps-box">
-                    <div class="steps-title">
-                      <div><i class="fa fa-rocket"></i><h2>What's Next?</h2></div>
-                      <p>Ready to deploy your application live?</p>
+                  <div class="steps-box"><div class="steps-title">
+                      <div><i class="fa fa-rocket"></i><h5>What's Next?</h5></div>
+                      <p>Let's get started — your journey with Pixel AI begins here!</p>
                     </div>
                     <div class="row gy-4">
                       <div class="col-md-4 col-sm-6">
                         <a href="backend-live-server.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
-                          <div class="steps-items"><h3>Live API Setup</h3><p>Production server config</p></div>
+                          <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
+                          <div class="steps-items"><h5>Live Server</h5><p>Live Backend</p></div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
                         <a href="deployment-vercel.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/7.png" alt="" /></div>
-                          <div class="steps-items"><h3>Frontend Vercel</h3><p>Deploy UI to Vercel</p></div>
+                          <div class="icon"><img src="assets/images/icon/3.png" alt="" /></div>
+                          <div class="steps-items"><h5>Vercel Deployment</h5><p>Cloud Hosting</p></div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
                         <a href="core-features.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
-                          <div class="steps-items"><h3>Core Features</h3><p>Explore AI capabilities</p></div>
+                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
+                          <div class="steps-items"><h5>Core Features</h5><p>Platform Essentials</p></div>
                         </a>
                       </div>
+                    </div></div>
+                    </div></div>
                     </div>
                   </div>
                 </div>
@@ -301,6 +391,17 @@ npm install</code></pre>
     <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
     <script src="assets/js/document/main.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.os-toggle').click(function() {
+          const os = $(this).data('os');
+          $('.os-toggle').removeClass('active btn-info').addClass('btn-outline-info');
+          $(this).addClass('active btn-info').removeClass('btn-outline-info');
+          $('.os-content').hide();
+          $(`#${os}-content`).fadeIn();
+        });
+      });
+    </script>
     <script src="assets/js/global-search.js"></script>
   </body>
 </html>
