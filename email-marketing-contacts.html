@@ -4,29 +4,30 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pixel AI - Vercel Deployment" />
+    <meta name="description" content="Pixel AI - Contact & Segment Management" />
     <meta name="author" content="pixelstrap" />
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
-    <title>Vercel Deployment - Pixel AI documentation</title>
+    <title>Contact & Segment Management - Pixel AI documentation</title>
+    <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Font Awesome-->
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
+    <!-- Feather icon-->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/remixicon.css" />
+    <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css" />
+    <!-- App css-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Global Search css-->
     <link rel="stylesheet" type="text/css" href="assets/css/global-search.css" />
   </head>
 
   <body>
     <a href="javascript:void(0)" class="sidebar-overlay"></a>
     <div class="tap-top"><i data-feather="chevrons-up"></i><p>Top</p></div>
-    
     <div class="home-section">
       <nav class="navbar navbar-expand-lg">
         <div class="container custom-container">
@@ -42,12 +43,12 @@
             >
               <i class="fa fa-bars"> </i>
             </button>
-            <a class="navbar-brand" href="index.html"> <img src="assets/images/logo/logo.svg" alt="" /></a>
+            <a class="navbar-brand" href="index.html"> <h2 style="color: white; margin: 0;">Pixel AI</h2></a>
             <div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav menu">
                   <li class="nav-item active"><a class="nav-link" href="#" target="_blank">Purchase</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://support.pixelstrap.com/" target="_blank">Support</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" target="_blank">Support</a></li>
                   <li class="nav-item"><a class="nav-link" href="#" target="_blank">Frontend</a></li>
                   <li class="nav-item"><a class="nav-link" href="#" target="_blank">Admin</a></li>
                 </ul>
@@ -79,7 +80,6 @@
         </div>
       </div>
     </div>
-
     <div class="container custom-container" id="mainRightNavbar">
       <div class="document-main">
         <div class="left-sidebar">
@@ -141,7 +141,7 @@
                     <div class="title">
                       <a class="nav-link" href="#!"
                         >AI Chatbot <i class="fa fa-angle-down" aria-hidden="true"></i
-                       ></a>
+                      ></a>
                     </div>
                     <ul class="sub-menu">
                       <li class="nav-item"><a href="chatbot-widget.html" class="nav-link">Chatbot Widget</a></li>
@@ -155,7 +155,7 @@
                         >Email Marketing <i class="fa fa-angle-down" aria-hidden="true"></i
                       ></a>
                     </div>
-                    <ul class="sub-menu">
+                    <ul class="sub-menu nav-sidebar-email">
                       <li class="nav-item"><a href="email-marketing-overview.html" class="nav-link">Overview</a></li>
                       <li class="nav-item"><a href="email-marketing-campaigns.html" class="nav-link">Campaigns</a></li>
                       <li class="nav-item"><a href="email-marketing-contacts.html" class="nav-link">Contact & Segment Management</a></li>
@@ -168,7 +168,7 @@
                     <div class="title">
                       <a class="nav-link" href="#!"
                         >Admin Module <i class="fa fa-angle-down" aria-hidden="true"></i
-                       ></a>
+                      ></a>
                     </div>
                     <ul class="sub-menu">
                       <li class="nav-item"><a href="admin-user-management.html" class="nav-link">User Management</a></li>
@@ -190,232 +190,152 @@
             </div>
           </div>
         </div>
-
         <div class="content card-hover-effect">
           <div class="row">
             <div class="col-sm-12">
               <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
-              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Deploy on Vercel</h4>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Contact & Segment Management</h4>
             </div>
 
-            <!-- Note -->
             <div class="col-12">
-              <div class="card">
-                <div class="card-body ul-body">
-                  <h5 class="main-sub-title mt-0">Pixel AI Frontend & Dashboard</h5>
-                  <div class="note-container">
-                    <p class="info-box">
-                      <b>Note:</b> The deployment steps on Vercel are streamlined for the Pixel AI Next.js frontend. 
-                      Ensure your backend is already deployed and accessible.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Step 1 -->
-            <div class="col-12">
-              <div class="card">
+              <div class="card mb-4">
                 <div class="card-body">
-                  <div class="deployment-steps">
-                    <h4>1. Open the pixel-ai-next directory from your project source.</h4>
-                    <div class="row">
-                      <div class="col-xl-10">
-                        <div class="images-box">
-                          <img src="assets/images/update/2.jpg" alt="" class="img-fluid" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <h5 class="main-sub-title mt-0 text-primary">Audience Control</h5>
+                  <p>Effective email marketing starts with a well-organized audience. This module allows you to manage your subscribers, group them into static lists, or create dynamic segments for highly targeted messaging. Follow the steps below to master audience management.</p>
                 </div>
               </div>
             </div>
 
-            <!-- Step 2 - Env -->
+            <!-- 1. Contact Management Suite -->
             <div class="col-12">
-              <div class="card">
+              <div class="card mb-4">
                 <div class="card-body">
-                  <div class="deployment-steps">
-                    <h4>2. Environment Settings:</h4>
-                    <p>Create or update your <b>.env.local</b> file with production URLs.</p>
-                    <p class="info-box">
-                      <b>Note:</b> Replace placeholders with your actual live backend API domain to ensure connectivity.
-                    </p>
-                    <div class="row">
-                      <div class="col-xl-10">
-                        <div class="images-box">
-                          <img src="assets/images/vercel/1.png" alt="" class="img-fluid" />
-                        </div>
-                      </div>
-                    </div>
+                  <h5 class="main-sub-title mt-0 divider-bottom">1. Individual Contact Management</h5>
+                  
+                  <h6 class="step-title mt-4">Step 1: Adding New Contacts</h6>
+                  <p>Click the <b>"Create Contacts"</b> button to launch the contact creation modal. Here, you must provide the subscriber's email address. You can also add their name and descriptive tags for better organization and segmenting later.</p>
+                  <div class="image-placeholder bg-light text-center p-4 mt-2 border rounded">
+                    <i class="fa fa-user-plus fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Create Contact Modal with Email, Name, and Tags fields]</p>
+                  </div>
 
-                    <ul class="mt-3">
-                      <li>
-                        <p><b>NEXT_PUBLIC_API_BASE_URL:</b> Live backend API endpoint (e.g., <code>https://api.pixel-ai.com/api</code>).</p>
-                      </li>
-                      <li>
-                        <p><b>NEXT_STORAGE_URL:</b> Base URL for media and file access (e.g., <code>https://api.pixel-ai.com</code>).</p>
-                      </li>
-                    </ul>
+                  <h6 class="step-title mt-4">Step 2: Editing Contact Attributes</h6>
+                  <p>To update an existing contact's details or change their tags, click the <b>Pencil Icon</b> in the Actions column. This opens the edit modal where you can modify any piece of information stored in the contact record.</p>
+                  <div class="image-placeholder bg-light text-center p-4 mt-2 border rounded">
+                    <i class="fa fa-pencil fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Edit Contact Modal showing existing data being updated]</p>
+                  </div>
+
+                  <h6 class="step-title mt-4">Step 3: Secure Data Removal</h6>
+                  <p>If a subscriber needs to be removed from your database, use the <b>Trash Icon</b>. A confirmation prompt will appear—once confirmed, the contact and all their associated data will be permanently deleted from the system.</p>
+                  <div class="image-placeholder bg-light text-center p-4 mt-2 border rounded">
+                    <i class="fa fa-trash-o fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Contact List View focusing on the Delete action and confirmation prompt]</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Step 3 - Vercel CLI -->
+            <!-- 2. Contact List Suite -->
             <div class="col-12">
-              <div class="card">
+              <div class="card mb-4">
                 <div class="card-body">
-                  <div class="deployment-steps">
-                    <h4>3. Install Vercel CLI:</h4>
-                    <p>Install the Vercel CLI globally using npm to enable terminal-based deployments.</p>
-                    <div class="code-block">
-                      <ul>
-                        <li>npm install -g vercel</li>
-                      </ul>
-                    </div>
-                    <div class="row">
-                      <div class="col-xl-10">
-                        <div class="images-box">
-                          <img src="assets/images/vercel/2.png" alt="" class="img-fluid" />
-                        </div>
-                      </div>
-                    </div>
+                  <h5 class="main-sub-title mt-0 divider-bottom">2. Contact List Management (Static)</h5>
+                  
+                  <h6 class="step-title mt-4">Step 1: Defining the List</h6>
+                  <p>Use the <b>"Create Contact List"</b> button to define a new static grouping. Provide a clear Name (e.g., "Monthly Newsletter") and an optional Description to help team members understand the list's purpose.</p>
+                  <div class="image-placeholder bg-light text-center p-4 mt-2 border rounded">
+                    <i class="fa fa-plus-square-o fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Create Contact List Modal - Name and Description fields]</p>
+                  </div>
+
+                  <h6 class="step-title mt-4">Step 2: Assigning Members</h6>
+                  <p>Within the creation modal, use the <b>"Select Contacts"</b> section to search and pick subscribers from your central repository to add to this specific list. You can add as many as needed.</p>
+                  <div class="image-placeholder bg-light text-center p-4 mt-2 border rounded">
+                    <i class="fa fa-check-square-o fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Contact Selection UI within the List Creation modal]</p>
+                  </div>
+
+                  <h6 class="step-title mt-4">Step 3: List Actions & Maintenance</h6>
+                  <p>From the main Contact List view, you can use the <b>User Group Icon</b> to quickly see all members of a list. The Edit and Delete icons allow for quick metadata updates or complete list removal.</p>
+                  <div class="image-placeholder bg-light text-center p-4 mt-2 border rounded">
+                    <i class="fa fa-users fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Contact List Toolbar showing Edit, View Members, and Delete icons]</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Step 4 - Login -->
+            <!-- 3. Segment Suite -->
             <div class="col-12">
-              <div class="card">
+              <div class="card mb-4">
                 <div class="card-body">
-                  <div class="deployment-steps">
-                    <h4>4. Login to Vercel</h4>
-                    <p>Authenticate your local machine with your Vercel account.</p>
-                    <div class="code-block">
-                      <ul>
-                        <li>vercel login</li>
-                      </ul>
-                    </div>
+                  <h5 class="main-sub-title mt-0 divider-bottom">3. Dynamic Segment Management</h5>
+                  
+                  <h6 class="step-title mt-4">Step 1: Segment Configuration</h6>
+                  <p>Start by clicking <b>"Create Segment"</b> and entering a unique Name. Segments are dynamic, meaning they automatically include any contacts that match your defined rules in real-time.</p>
+                  <div class="image-placeholder bg-light text-center p-4 mt-2 border rounded">
+                    <i class="fa fa-search-plus fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Create Segment Modal - Initial Name field]</p>
+                  </div>
 
-                    <div class="row gap-3">
-                      <div class="col-xl-10">
-                        <div class="images-box"><img src="assets/images/vercel/3.png" alt="" class="img-fluid" /></div>
-                      </div>
-                      <div class="col-xl-10">
-                        <div class="images-box"><img src="assets/images/vercel/4.png" alt="" class="img-fluid" /></div>
-                      </div>
-                    </div>
+                  <h6 class="step-title mt-4">Step 2: Building Rule-Based Criteria</h6>
+                  <p>Add conditions using the <b>Criteria builder</b>. Select a <b>Field</b> (Email, Name, Tags), an <b>Operator</b> (contains, equals, starts with), and a <b>Value</b>. For example, to target all Gmail users, set: <i>Email | contains | gmail.com</i>.</p>
+                  <div class="image-placeholder bg-light text-center p-4 mt-2 border rounded">
+                    <i class="fa fa-cogs fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Criteria Builder Interface showing dynamic rule selection]</p>
+                  </div>
+
+                  <h6 class="step-title mt-4">Step 3: Lifecycle & Syncing</h6>
+                  <p>Once created, the segment constantly scans your database. If a new contact matches the criteria, they are added automatically. You can refine rules via the <b>Edit Icon</b> or remove the segment using the <b>Delete Icon</b>.</p>
+                  <div class="image-placeholder bg-light text-center p-4 mt-2 border rounded">
+                    <i class="fa fa-refresh fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Segment List View with sync status and action buttons]</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Step 5 - Deploy -->
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="deployment-steps">
-                    <h4>5. Deploy Project:</h4>
-                    <p>Navigate to the <b>pixel-ai-next</b> root and run the deployment command.</p>
-                    <div class="code-block">
-                      <ul>
-                        <li>vercel</li>
-                      </ul>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-xl-10">
-                        <div class="images-box">
-                          <img src="assets/images/vercel/5.png" alt="" class="img-fluid" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Default Credentials -->
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="default-credential">
-                    <h5 class="main-sub-title mt-0">Default Credentials</h5>
-
-                    <div class="row gy-2">
-                      <div class="col-xl-6">
-                        <div class="admin-credential">
-                          <h4>Admin Account:</h4>
-                          <p><b>- Email:</b> admin@pixel-ai.com</p>
-                          <p><b>- Password:</b> admin123</p>
-                          <p class="small text-muted mt-2">Use these to access the main Command Center and manage users.</p>
-                        </div>
-                      </div>
-
-                      <div class="col-xl-6">
-                        <div class="vendor-credential">
-                          <h4>Demo User Account:</h4>
-                          <p><b>- Email:</b> demo@pixel-ai.com</p>
-                          <p><b>- Password:</b> user123</p>
-                          <p class="small text-muted mt-2">A test user account for exploring AI features and front-end tools.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Next Steps -->
+            <!-- Footer Navigation -->
             <div class="col-12 mt-4">
               <div class="card">
                 <div class="card-body">
-                  <div class="steps-box"><div class="steps-title">
+                  <div class="steps-box">
+                    <div class="steps-title">
                       <div><i class="fa fa-rocket"></i><h5>What's Next?</h5></div>
-                      <p>Let's get started — your journey with Pixel AI begins here!</p>
+                      <p>Start building your campaigns or explore other AI features.</p>
                     </div>
                     <div class="row gy-4">
                       <div class="col-md-4 col-sm-6">
-                        <a href="deployment-vps.html" class="steps-content">
+                        <a href="email-marketing-campaigns.html" class="steps-content">
                           <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
-                          <div class="steps-items"><h5>VPS Deployment</h5><p>Server Hosting</p></div>
+                          <div class="steps-items"><h5>Campaigns</h5><p>Create & Launch</p></div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
-                        <a href="deployment-cpanel.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/4.png" alt="" /></div>
-                          <div class="steps-items"><h5>C-Panel Deployment</h5><p>Simple Hosting</p></div>
+                        <a href="email-marketing-overview.html" class="steps-content">
+                          <div class="icon"><img src="assets/images/icon/3.png" alt="" /></div>
+                          <div class="steps-items"><h5>Overview</h5><p>Module Introduction</p></div>
                         </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
                         <a href="core-features.html" class="steps-content">
-                          <div class="icon"><img src="assets/images/icon/2.png" alt="" /></div>
-                          <div class="steps-items"><h5>Core Features</h5><p>Platform Essentials</p></div>
+                          <div class="icon"><img src="assets/images/icon/1.png" alt="" /></div>
+                          <div class="steps-items"><h5>Core Features</h5><p>Platform Capabilities</p></div>
                         </a>
                       </div>
-                    </div></div>
-                    </div></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
-
-    <footer>
-      <div class="container">
-        <div class="row footer-theme partition-f">
-          <div class="col-12">Copyright 2026 © Pixel AI by pixelstrap</div>
-        </div>
-      </div>
-    </footer>
+    <footer><div class="container"><div class="row footer-theme partition-f"><div class="col-12">Copyright 2026 © Pixel AI</div></div></div></footer>
     <div class="bg-overlay"></div>
-
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/js/icons/feather-icon/feather.min.js"></script>

@@ -147,6 +147,18 @@
                       <li class="nav-item"><a href="chatbot-whatsapp.html" class="nav-link">WhatsApp Integration</a></li>
                     </ul>
                   </li>
+                  <li class="nav-item menu">
+                    <div class="title">
+                      <a class="nav-link" href="#!"
+                        >Email Marketing <i class="fa fa-angle-down" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                    <ul class="sub-menu">
+                      <li class="nav-item"><a href="email-marketing-overview.html" class="nav-link">Overview</a></li>
+                      <li class="nav-item"><a href="email-marketing-campaigns.html" class="nav-link">Campaigns</a></li>
+                      <li class="nav-item"><a href="email-marketing-contacts.html" class="nav-link">Contact & Segment Management</a></li>
+                    </ul>
+                  </li>
                   <li class="nav-item">
                     <div class="title"><a class="nav-link" href="advanced-features.html">Advanced Features</a></div>
                   </li>
@@ -185,59 +197,114 @@
             <div class="col-12">
             <div class="card mb-4">
               <div class="card-body">
-                <p class="mb-0">The System Settings module provides high-level control over the core AI engine, payment gateways, and platform branding.</p>
+                <p class="mb-0">The System Settings module is the control center for Pixel AI, providing granular control over application identity, resource constraints, brand aesthetics, and communication channels.</p>
               </div>
             </div>
           </div>
 
+          <!-- Section 1: General Application Settings -->
           <div class="col-12">
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="main-sub-title mt-0">Step 1: AI Engine Configuration</h5>
-                <p>Enter your API keys for OpenAI, Google Gemini, and Anthropic. These keys power the entire platform's AI capabilities, from chat completions to image generation.</p>
+                <h5 class="main-sub-title mt-0">1. General Application Settings</h5>
+                <p>This section allows administrators to define the primary identity and availability of the platform. It covers basic app details, maintenance states, and system-critical page content.</p>
+                <ul>
+                  <li><strong>App Information:</strong> Manage the application's public name, SEO description, and support email addresses used in platform communications.</li>
+                  <li><strong>Maintenance Mode:</strong> Temporarily take the platform offline for updates. You can set a custom maintenance title, message, and image while whitelisting specific IP addresses for administrative access.</li>
+                  <li><strong>System Pages:</strong> Customize the identity of the "404 Not Found" and "No Internet" pages to ensure a consistent user experience even during errors.</li>
+                </ul>
                 <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
-                  <i class="fa fa-microchip fa-3x mb-2 text-muted"></i>
-                  <p class="text-muted">[IMAGE: AI API Keys Configuration Interface with secure input fields]</p>
+                  <i class="fa fa-desktop fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Interface for General App Info, Maintenance Mode toggle, and System Page identity settings]</p>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Section 2: Resource Limits & Credit Configuration -->
           <div class="col-12">
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="main-sub-title mt-0">Step 2: Payment Gateway Setup</h5>
-                <p>Configure Stripe Webhooks and PayPal Client IDs to enable automated billing, subscription management, and secure transactions.</p>
+                <h5 class="main-sub-title mt-0">2. Resource Limits & Credit Configuration</h5>
+                <p>Control the platform's operational scalability and AI consumption model by setting global limits and Capability-based credit costs.</p>
+                <ul>
+                  <li><strong>Resource Limits:</strong> Set hard limits (in MB) for Documents, Audio, Video, and Image uploads. You can also define session expiration days and device login limits to enhance security.</li>
+                  <li><strong>Credit Configuration:</strong> Define the "Economy" of your platform by setting specific credit costs for every AI action, such as Article Generation, Content Analysis, and Campaign limits.</li>
+                </ul>
                 <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
-                  <i class="fa fa-credit-card fa-3x mb-2 text-muted"></i>
-                  <p class="text-muted">[IMAGE: Finance & Payment Integration Settings for Stripe and PayPal]</p>
+                  <i class="fa fa-calculator fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Resource Limit sliders and Credit Configuration dashboard showing costs for various AI capabilities]</p>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Section 3: Logo & Branding Identity -->
           <div class="col-12">
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="main-sub-title mt-0">Step 3: Social Auth & Branding</h5>
-                <p>Set up OAuth for Google and Facebook login, and upload your custom Logo and Favicon to ensure consistent brand identity across the platform.</p>
+                <h5 class="main-sub-title mt-0">3. Logo & Branding Identity</h5>
+                <p>Establish a consistent visual brand across all user touchpoints. Upload specifically sized assets to ensure your logo looks sharp in every part of the application.</p>
+                <ul>
+                  <li><strong>Logo Suite:</strong> Manage specifically optimized logos for Light/Dark themes, Sidebar navigation (collapsed/expanded), and Mobile viewports.</li>
+                  <li><strong>System Icons:</strong> Upload your platform's Favicon and specific branding for Landing pages, Notifications, and the User Onboarding flow.</li>
+                </ul>
                 <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
                   <i class="fa fa-paint-brush fa-3x mb-2 text-muted"></i>
-                  <p class="text-muted">[IMAGE: Brand Identity settings with Logo upload and Social Login Config]</p>
+                  <p class="text-muted">[IMAGE: Logo Branding dashboard with multiple upload slots for various logo types and favicons]</p>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Section 4: System Email & SMTP Setup -->
           <div class="col-12">
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="main-sub-title mt-0">Step 4: Regional & Misc Settings</h5>
-                <p>Set the platform's default language, timezone, and currency symbols to cater to your specific target audience and market.</p>
+                <h5 class="main-sub-title mt-0">4. System Email & SMTP Setup</h5>
+                <p>Configure the backbone of your platform's communication. This section manages how users receive OTPs, notifications, and support emails.</p>
+                <ul>
+                  <li><strong>SMTP Server:</strong> Connect your email service provider (e.g., SendGrid, Mailgun) by entering Host, Port, Encryption (TLS/SSL), and credentials.</li>
+                  <li><strong>Email Templates:</strong> Customize the dynamic templates for system messages like the OTP (One-Time Password) email, ensuring professional deliverability.</li>
+                </ul>
                 <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
-                  <i class="fa fa-globe fa-3x mb-2 text-muted"></i>
-                  <p class="text-muted">[IMAGE: Localization preferences for Language, Timezone, and Currency]</p>
+                  <i class="fa fa-envelope fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: SMTP Configuration form and OTP Email Template editor with dynamic placeholders]</p>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 5: Localization & Additional Tools -->
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="main-sub-title mt-0">5. Localization & Additional Tools</h5>
+                <p>Expand your platform's global reach and manage user engagement through dedicated localization and support tools.</p>
+                <ul>
+                  <li><strong>Language Management:</strong> Translate platform strings and manage multiple locale files to cater to an international audience.</li>
+                  <li><strong>Contact Inquiries:</strong> Track and respond to user messages sent through the platform's contact forms.</li>
+                  <li><strong>Testimonials:</strong> Curate and display real user feedback on your landing pages to build trust and social proof.</li>
+                </ul>
+                <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                  <i class="fa fa-language fa-3x mb-2 text-muted"></i>
+                  <p class="text-muted">[IMAGE: Language translation interface and list views for Testimonials and Contact Inquiries]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Points -->
+          <div class="col-12">
+            <div class="card mb-4 border-start border-4 border-primary">
+              <div class="card-body bg-light">
+                <h6 class="step-title mt-0 text-primary"><i class="fa fa-lightbulb-o me-2"></i>Key Points for Administration</h6>
+                <ul class="mb-0">
+                  <li><strong>Verify SMTP:</strong> Always use the "Test Mail" feature after changing SMTP settings to prevent user lockout.</li>
+                  <li><strong>Branding Dimensions:</strong> Use transparent PNG or SVG files for logos to ensure compatibility with both light and dark modes.</li>
+                  <li><strong>Credit Balances:</strong> Ensure credit costs align with your subscription pricing to maintain platform profitability.</li>
+                  <li><strong>Maintenance:</strong> Enable Maintenance Mode before performing large-scale database migrations or updates.</li>
+                </ul>
               </div>
             </div>
           </div>
