@@ -4,11 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pixel AI - Social Platforms & Configuration" />
+    <meta name="description" content="Pixel AI - Social account setup" />
     <meta name="author" content="pixelstrap" />
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
-    <title>Platforms & Configuration - Pixel AI documentation</title>
+    <title>Social account setup - Pixel AI documentation</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -72,7 +72,7 @@
       <div class="container custom-container">
         <div class="document">Pixel AI documentation</div>
         <div class="top-heading">
-          <h2>Platforms & Social Connect Architecture</h2>
+          <h2>Social account setup</h2>
           <div class="home-search">
             <input type="search" name="text" placeholder="Search..." />
             <i class="fa fa-search" aria-hidden="true"></i>
@@ -169,7 +169,7 @@
                     </div>
                     <ul class="sub-menu">
                       <li class="nav-item"><a href="social-media-dashboard.html" class="nav-link">Dashboard</a></li>
-                      <li class="nav-item"><a href="social-media-platforms.html" class="nav-link">Platforms & Configuration</a></li>
+                      <li class="nav-item"><a href="social-media-platforms.html" class="nav-link">Social account setup</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -205,90 +205,178 @@
           <div class="row">
             <div class="col-sm-12">
               <button class="btn sidebar-button"><i class="fa fa-bars me-2"></i>Menu</button>
-              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Platforms & Configuration</h4>
+              <h4 class="main-title mb-4"><img src="assets/images/favicon.svg" alt="" /> Social account setup</h4>
             </div>
 
             <div class="col-12">
+              <!-- Facebook Connection Setup Card -->
               <div class="card mb-4">
                 <div class="card-body">
-                  <h5 class="main-sub-title mt-0 text-primary">Connectivity Infrastructure</h5>
-                  <p>To enable automated publishing and real-time analytics, Pixel AI must be synchronized with your social network accounts. This section details the platform-specific sync process and the underlying Social Connect Architecture.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Section 1: Platform Management -->
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-body">
-                  <h5 class="main-sub-title mt-0 divider-bottom">1. Platform Management & Syncing</h5>
-                  <p>Individual networks are managed as "Nodes" within the Pixel AI ecosystem. You can manage multiple pages or profiles across Facebook, Instagram, and LinkedIn.</p>
+                  <h5 class="main-sub-title mt-0 divider-bottom">Connecting to Facebook</h5>
                   
-                  <h6 class="step-title mt-4">The Sync Process:</h6>
+                  <h6 class="step-title mt-4">1. Create a New App</h6>
                   <ul>
-                    <li><strong>Facebook & Instagram:</strong> Synchronize your Meta-managed Business Pages and Professional Instagram accounts. Reach and follower metrics are updated in real-time once synced.</li>
-                    <li><strong>LinkedIn:</strong> Connect your personal profile or corporate pages to amplify your professional authority.</li>
-                    <li><strong>Sync Node Action:</strong> Click the <b>"+ Sync Node"</b> button on any platform card to initiate the OAuth handshake and select the specific pages you wish to manage.</li>
+                    <li>Visit: <a href="https://developers.facebook.com" target="_blank">https://developers.facebook.com</a></li>
+                    <li>Click on <b>“My Apps”</b> (top-right). (If you don’t have a developer account, create one by clicking Get Started.)</li>
+                    <li>Click <b>“Create App”</b>.</li>
+                    <li>Fill in:
+                      <ul>
+                        <li><b>App Name</b> (anything you like)</li>
+                        <li><b>Contact Email</b></li>
+                        <li><b>Select the use case:</b> Choose <b>“Other“</b></li>
+                        <li><b>Select the app type:</b> Choose <b>“Business”</b>.</li>
+                      </ul>
+                    </li>
+                    <li>Click <b>“Next”</b>.</li>
+                    <li>Click <b>“Create App”</b> and complete any security checks (CAPTCHA).</li>
                   </ul>
                   
-                  <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
-                    <i class="fa fa-share-alt fa-3x mb-2 text-muted"></i>
-                    <p class="text-muted">[IMAGE: Platform management grid with Facebook, Instagram, and LinkedIn cards]</p>
-                  </div>
-
-                  <h6 class="step-title mt-4">Infrastructure Security Protocols:</h6>
-                  <div class="row mt-3">
-                    <div class="col-md-4">
-                      <div class="p-3 border rounded h-100">
-                        <h6 class="text-primary"><i class="fa fa-link"></i> Nexus Integration</h6>
-                        <p class="small mb-0">Secure Meta-cluster orchestration and cross-platform syncing.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="p-3 border rounded h-100">
-                        <h6 class="text-primary"><i class="fa fa-shield"></i> Safe Protocol</h6>
-                        <p class="small mb-0">End-to-end multi-layer auth systems and token encryption.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="p-3 border rounded h-100">
-                        <h6 class="text-primary"><i class="fa fa-bolt"></i> Rapid Revoke</h6>
-                        <p class="small mb-0">Single-cycle authority revocation and session termination.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Section 2: Social Connect Architecture -->
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-body">
-                  <h5 class="main-sub-title mt-0 divider-bottom">2. Social Connect Architecture (Configuration)</h5>
-                  <p>The **Social Configuration** page is where you provide the API credentials required to establish the bridge between Pixel AI and the social platforms.</p>
+                  <p class="mt-3">Make sure you have enabled the necessary permissions:</p>
+                  <ul>
+                    <li><b>Which permission?</b> <code>pages_show_list</code> (required to list pages).</li>
+                    <li><b>Where to add it?</b> As a scope in Facebook Login (OAuth).</li>
+                    <li><b>What does the client do?</b> When logging into the app with Facebook, they must approve this permission.</li>
+                    <li><b>In production?</b> If the app is “Live,” you need to request approval for <code>pages_show_list</code> under <b>App Review → Permissions & Features</b>.</li>
+                    <li><b>Technical note:</b> The <code>/me/accounts</code> call must be made with a user access token (not an app or page token).</li>
+                  </ul>
                   
-                  <h6 class="step-title mt-4">Meta Platform (Facebook & Instagram)</h6>
-                  <p>Requires your Facebook Developer App credentials:</p>
-                  <ul>
-                    <li><strong>Meta App ID:</strong> The unique identifier for your registered application.</li>
-                    <li><strong>Meta App Secret:</strong> The confidential key used for server-to-server authentication.</li>
-                  </ul>
+                  <p><b>Permissions list:</b></p>
+                  <pre class="bg-light p-3 border rounded"><code>'pages_manage_posts',
+'pages_show_list',
+'pages_read_user_content',
+'pages_read_engagement',
+'Read_insights'</code></pre>
 
-                  <h6 class="step-title mt-4">LinkedIn & Real-time Integration</h6>
+                  <h6 class="step-title mt-4">2. Add Facebook Login App</h6>
+                  <p>Once your app is created, you will see a page titled “Add products to your app”:</p>
                   <ul>
-                    <li><strong>LinkedIn Platform:</strong> Enter your LinkedIn Client ID and Client Secret from the LinkedIn Developer Portal.</li>
-                    <li><strong>Ably Real-time Platform:</strong> Provide your Ably API Key to enable instant sync status updates and live metric broadcasting.</li>
+                    <li>Find <b>Facebook Login App</b> on the list and click <b>Set up</b>.</li>
+                    <li>Add the <b>Redirect URL</b> to the <b>Valid OAuth Redirect URIs</b> section in Facebook Login settings page. Then click <b>Save Changes</b>.</li>
                   </ul>
-
-                  <div class="alert alert-warning mt-4 p-3 border-start border-warning border-4">
-                    <h6 class="alert-heading text-warning mb-1"><i class="fa fa-lock me-2"></i>Security Awareness</h6>
-                    <p class="small mb-0">Your credentials are encrypted at rest. Never share your App Secret or API Keys with unauthorized personnel or third-party services.</p>
-                  </div>
 
                   <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
-                    <i class="fa fa-gears fa-3x mb-2 text-muted"></i>
-                    <p class="text-muted">[IMAGE: Social Connect Configuration form with Meta, LinkedIn, and Ably fields]</p>
+                    <i class="fa fa-image fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Facebook Login App Setup]</p>
+                  </div>
+
+                  <h6 class="step-title mt-4">3. Adjusting App Settings</h6>
+                  <ul>
+                    <li>Go to the <b>“Settings” > “Basic”</b> section in the left sidebar.</li>
+                    <li>Fill in the highlighted parts as shown in the platform:
+                      <ul>
+                        <li><b>Privacy Policy URL</b> – Enter the URLs of the relevant policy pages of your site.</li>
+                        <li>Copy your <b>App ID</b> and <b>App secret</b>. Enter your App ID and App Secret to the appropriate field in the social configuration section.</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                    <i class="fa fa-image fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Facebook App Basic Settings]</p>
+                  </div>
+
+                  <h6 class="step-title mt-4">4. Connect Your Facebook Page to Pixel-ai</h6>
+                  <p>After completing the Facebook configuration:</p>
+                  <ul>
+                    <li>From the user menu, go to <b>Social Media Suite > Platforms</b>.</li>
+                    <li>Click on <b>Facebook</b> and follow the steps in the pop-up window to connect your Facebook page.</li>
+                    <li>Once your page is connected, you should see your connected page.</li>
+                  </ul>
+
+                  <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                    <i class="fa fa-image fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Connected Facebook Page in Pixel-ai]</p>
+                  </div>
+
+                  <p class="mt-3">That’s all! Now you can start posting.</p>
+                </div>
+              </div>
+
+              <!-- Instagram Connection Setup Card -->
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0 divider-bottom">Connecting to Instagram</h5>
+                  
+                  <h6 class="step-title mt-4">1. Initial Setup</h6>
+                  <ul>
+                    <li>Create a <b>Meta App</b> if you haven't already (follow the Facebook setup steps).</li>
+                    <li><b>Connect your Instagram account</b> to your Facebook Business Page.</li>
+                    <li>Make sure you have a <b>Business Instagram Account</b> (Professional account).</li>
+                  </ul>
+
+                  <h6 class="step-title mt-4">2. Add Webhooks Product</h6>
+                  <ul>
+                    <li>In your Meta App dashboard, add the <b>Webhooks</b> product.</li>
+                    <li>Select <b>Instagram</b> from the top dropdown menu.</li>
+                    <li>Add the <b>Callback URL</b> and <b>Verify Token</b> (which you configure in your <code>.env</code> file).</li>
+                    <li>Click on <b>Verify</b>.</li>
+                  </ul>
+
+                  <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                    <i class="fa fa-image fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Instagram Webhook Subscription]</p>
+                  </div>
+
+                  <h6 class="step-title mt-4">3. After successful verification, subscribe to the webhook fields as shown in the platform.</h6>
+                  <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                    <i class="fa fa-image fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: Instagram Webhook Subscription]</p>
+                  </div><br>
+
+                  <p>That's it! You have completed the Instagram setup. Now you can connect your Instagram profile in the Social Media Suite.</p>
+                </div>
+              </div>
+
+              <!-- LinkedIn Connection Setup Card -->
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="main-sub-title mt-0 divider-bottom">Connecting to LinkedIn</h5>
+                  
+                  <h6 class="step-title mt-4">Step 1: Create a LinkedIn App</h6>
+                  <ul>
+                    <li>Visit the <a href="https://www.linkedin.com/developers/" target="_blank">LinkedIn Developer Portal</a>.</li>
+                    <li>Click <b>“Create App”</b>.</li>
+                    <li>Fill out the required details:
+                      <ul>
+                        <li><b>App Name</b></li>
+                        <li><b>LinkedIn Page</b></li>
+                        <li><b>Business Email</b></li>
+                        <li><b>Company</b></li>
+                      </ul>
+                    </li>
+                    <li>Once your app is created, go to the <b>Products</b> tab and add the following products:
+                      <ul>
+                        <li><b>Sign In with LinkedIn using OpenID Connect</b></li>
+                        <li><b>Share on LinkedIn</b></li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <h6 class="step-title mt-4">Step 2: Set the Redirect URL in LinkedIn</h6>
+                  <ul>
+                    <li>Go to the <b>Auth</b> tab in your app settings to continue configuration.</li>
+                    <li>Under <b>Redirect URLs</b>, paste the <b>Redirect URL</b> provided in your Pixel-ai settings.</li>
+                    <li>Click <b>Save</b> to apply the changes.</li>
+                  </ul>
+
+                  <h6 class="step-title mt-4">Step 3: Get Your LinkedIn App Credentials</h6>
+                  <p>In your LinkedIn App’s <b>Auth</b> tab:</p>
+                  <ul>
+                    <li>Copy your <b>Client ID</b> (LinkedIn App ID)</li>
+                    <li>Copy your <b>Client Secret</b> (LinkedIn App Secret)</li>
+                  </ul>
+
+                  <h6 class="step-title mt-4">Step 5: Enter App Credentials in Pixel-ai</h6>
+                  <ul>
+                    <li>In <b>Pixel-ai</b>, go to <b>Social Media Suite > Social Configuration</b>.</li>
+                    <li>Locate the <b>LinkedIn</b> section.</li>
+                    <li>Paste your <b>App ID</b> and <b>App Secret</b> into the appropriate fields.</li>
+                    <li>Click <b>Save</b>.</li>
+                  </ul>
+
+                  <div class="image-placeholder bg-light text-center p-4 mt-3 border rounded">
+                    <i class="fa fa-image fa-3x mb-2 text-muted"></i>
+                    <p class="text-muted">[IMAGE: LinkedIn App Credentials Setup]</p>
                   </div>
                 </div>
               </div>
